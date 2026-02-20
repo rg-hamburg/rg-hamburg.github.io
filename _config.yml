@@ -1,0 +1,16 @@
+title: RG Hamburg
+description: Radsport-Gemeinschaft Hamburg von 1893 e.V.
+lang: de
+baseurl: ""
+url: "https://rg-hamburg.github.io"
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - documentation/
+  - README.md
+  - "*.fig"

@@ -46,6 +46,7 @@ body {
 .bg-rg-dark  { background-color: var(--rg-dark) !important; }
 .bg-rg-light { background-color: var(--rg-light) !important; }
 .text-rg-blue { color: var(--rg-blue) !important; }
+.text-rg-yellow { color: #ffed00 !important; }
 
 .gradient-yellow-orange {
   background: var(--rg-gradient-yellow-orange);
@@ -770,6 +771,45 @@ body {
 @media (max-width: 767.98px) {
   .training-table thead th,
   .training-table tbody td { font-size: 16px; padding: 16px 12px; }
+}
+
+/* ============================================================
+   PROSE TABLES (markdown-generated tables inside .prose)
+============================================================ */
+.prose table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.prose table thead th {
+  background: var(--rg-text-grey);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 20px;
+  border: none;
+  vertical-align: middle;
+}
+
+.prose table tbody tr:nth-child(odd)  td { background: #fff; }
+.prose table tbody tr:nth-child(even) td { background: var(--rg-light); }
+
+.prose table tbody td {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--rg-text-grey);
+  padding: 16px 20px;
+  border-color: #d2dae4;
+  vertical-align: middle;
+}
+
+@media (max-width: 767.98px) {
+  .prose table thead th,
+  .prose table tbody td { font-size: 14px; padding: 12px 10px; }
 }
 
 /* ============================================================

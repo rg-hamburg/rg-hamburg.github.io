@@ -1,0 +1,31 @@
+{% assign d = include.data %}
+{% if d.faq %}
+<section class="py-section bg-rg-light">
+  <div class="container">
+
+    <div class="section-header mb-section-head">
+      <span class="section-label">Wissenswertes</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="faq-card">
+      <div class="accordion faq-accordion accordion-flush" id="faqAccordion">
+        {% for item in d.faq %}
+          {% assign faq_id = "faq" | append: forloop.index %}
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button{% unless forloop.first %} collapsed{% endunless %}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ faq_id }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="{{ faq_id }}">
+                {{ item.question }}
+              </button>
+            </h2>
+            <div id="{{ faq_id }}" class="accordion-collapse collapse{% if forloop.first %} show{% endif %}" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">{{ item.answer }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endif %}

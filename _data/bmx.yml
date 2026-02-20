@@ -1,0 +1,81 @@
+hero_image: hero-bmx.png
+hero_title: BMX
+
+section_label: Disziplinen
+intro_heading: "Führender BMX Verein in Norddeutschland"
+intro_text: "In Hamburg wird während der Sommerzeit viermal in der Woche auf der BMX-Bahn in Farmsen, Neusurenland 66, trainiert. Neueinsteiger*innen haben die Möglichkeit, sich immer donnerstags während der Trainingszeit, unter Anleitung der Trainer, ein Rad und einen Helm auszuleihen. Aktuell wird der BMX-Sport ausschließlich von der RG Hamburg angeboten – dort gibt es aber sehr viele Sportler*innen, die mit Vollgas über die gewellte Radbahn rasen und springen."
+
+intro_image: discipline-bmx.png
+intro_image_alt: BMX Track RG Hamburg
+intro_caption: "Bildunterschrift und Bildcredits © 2014 Elitetrax INC."
+
+intro_subheading: "Ein Projekt von RG Hamburg"
+intro_paragraphs:
+  - "Die Radsport-Gemeinschaft Hamburg von 1893 e.V. gründete 1982 die BMX-Abteilung und startete mit dem Betrieb der ersten eigenen Strecke in Volksdorf 1985. Der Sport BMX-Race ist bis heute ein erfolgreicher Teil der RG Hamburg."
+  - "Planung und Bau<br>Der heutige Race Track steht in Farmsen-Berne. Die Planung und der Bau des BMX Race Tracks wurde von 2011 bis 2014 umgesetzt. Die RG Hamburg stemmte das Projekt in Eigenleistung durch freiwillige Helfer aus Verein und Umgebung. Für das Bahn-Design und den Rohbau konnte professionelle Unterstützung von Elite Trax realisiert werden. Tom Ritz baut weltweit Strecken für Vereine und internationale Wettkämpfe, wie z.B. Olympia 2016 in Rio. Die B-Bahn ist jedes Jahr Austragungsort nationaler Wettkämpfe in der Bundesliga und dem NordCup. Im Jahr 2017 wurde durch die RG Hamburg auf dem BMX Track Neusurenland die Deutsche Meisterschaft BMX Race ausgerichtet."
+
+faq:
+  - question: "Wo wird trainiert?"
+    answer: "Wir – die RG Hamburg – betreiben eine vereinseigene Anlage, Neusurenland 66, 22159 Hamburg. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+  - question: "Wer kann mitmachen?"
+    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+  - question: "Welche Arten von BMX?"
+    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+  - question: "Sport und Spaß?"
+    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+  - question: "Wie funktioniert das Schnupperkids Probetraining?"
+    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+
+training:
+  label: Trainingszeiten 2025
+  rows:
+    - day: Montag
+      time: "17:30 – 19:00"
+      group: "Gruppe 1 – alle bis 13"
+      trainer: Joshua / Momme
+    - day: Montag
+      time: "19:00 – 20:30"
+      group: "Gruppe 2 und 3 – alle 14*"
+      trainer: Marco
+    - day: Dienstag
+      time: "17:00 – 18:30"
+      group: Leistungsgruppe 1
+      trainer: Kristaps
+    - day: Dienstag
+      time: "18:30 – 20:00"
+      group: Leistungsgruppe 2
+      trainer: Kristaps
+    - day: Mittwoch
+      time: "16:30 – 18:00"
+      group: "Schnupperkids**"
+      trainer: Alex / Tim / Nic
+    - day: Mittwoch
+      time: "18:30 – 20:00"
+      group: "Gruppe 2 – 14*"
+      trainer: Joshi oder Momme
+    - day: Donnerstag
+      time: "17:30 – 19:00"
+      group: "Gruppe 1 – alle bis 13"
+      trainer: Timo / Joshi oder Momme
+    - day: Donnerstag
+      time: "19:00 – 20:30"
+      group: "Gruppe 3 – 14*"
+      trainer: Timo
+    - day: Freitag
+      time: "–"
+      group: "Freies Fahren*"
+      trainer: Schlüsselinhaber
+  footnotes:
+    - "<strong>HINWEIS:</strong> Änderungen an den Trainingszeiten werden so schnell wie möglich per Mail kommuniziert."
+    - "Die Trainingszeiten gelten nur vom 24. März 2025 bis zum 17. Oktober 2025. Sollte die Witterung es zulassen, so wird die Bahn individuell auch außerhalb dieser Zeiten geöffnet. Die Öffnung der Bahn wird über die internen Kommunikationskanäle an die Mitglieder kommuniziert."
+    - "* Freies Fahren für Vereinsmitglieder und Sportler die dem Bund Deutscher Radfahrer e.V. angehören."
+    - "** Bitte die Infos unter \"Wissenswertes\" beachten"
+    - 'Bahnvermietungen nur an BMX Vereine des Bund Deutscher Radfahrer e.V. oder/und nach Absprache und Anmeldung bei unseren BMX Fachwärtinnen Vivien Schlapper oder Sandra Thiel: <a href="mailto:bmx@rg-hamburg.de" class="text-rg-blue">bmx@rg-hamburg.de</a>. Gastfahrer sind zu allen Öffnungszeiten willkommen.'
+
+impressions:
+  - image: hero-bmx.png
+    alt: BMX Impression 1
+  - image: hero-road.png
+    alt: BMX Impression 2
+  - image: hero-gravel.png
+    alt: BMX Impression 3

@@ -1,0 +1,29 @@
+{% assign d = include.data %}
+{% if d.impressions %}
+<section class="impressions-section bg-rg-light">
+  <div class="container">
+
+    <div class="section-header mb-section-head">
+      <span class="section-label">Impressionen</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+      <button class="impressions-nav-btn flex-shrink-0" id="impressionsPrev" aria-label="Zurück">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <div class="row g-3 flex-grow-1" id="impressionsTrack">
+        {% for img in d.impressions %}
+          <div class="col-4">
+            <img src="{{ site.baseurl }}/assets/images/{{ img.image }}" class="impressions-img" alt="{{ img.alt }}">
+          </div>
+        {% endfor %}
+      </div>
+      <button class="impressions-nav-btn flex-shrink-0" id="impressionsNext" aria-label="Weiter">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,17 @@
+- name: Rennsport
+  url: /disziplinen/rennsport/
+  image: discipline-rennsport.png
+  description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+  btn_label: Erfahre mehr
+
+- name: BMX
+  url: /disziplinen/bmx/
+  image: discipline-bmx.png
+  description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+  btn_label: Erfahre mehr
+
+- name: "Gravel & MTB"
+  url: /disziplinen/gravel/
+  image: discipline-gravel.png
+  description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+  btn_label: Erfahre mehr

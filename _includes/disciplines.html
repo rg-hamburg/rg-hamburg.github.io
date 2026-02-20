@@ -1,0 +1,24 @@
+<section class="py-section bg-rg-light" id="disziplinen">
+  <div class="container">
+    <div class="section-header mb-section-head">
+      <span class="section-label">Unsere Disziplinen</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="row g-4">
+      {% for discipline in site.data.disciplines %}
+        <div class="col-12 col-md-4">
+          <article class="discipline-card">
+            <div class="discipline-img-wrap">
+              <img src="{{ site.baseurl }}/assets/images/{{ discipline.image }}" class="discipline-img" alt="{{ discipline.name }}">
+            </div>
+            <div class="discipline-body p-4">
+              <h2 class="discipline-title gradient-blue text-uppercase">{{ discipline.name }}</h2>
+              <p class="discipline-text">{{ discipline.description }}</p>
+              <a href="{{ site.baseurl }}{{ discipline.url }}" class="btn btn-rg-blue">{{ discipline.btn_label }}</a>
+            </div>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

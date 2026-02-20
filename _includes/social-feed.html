@@ -1,0 +1,45 @@
+<section class="py-section bg-rg-light">
+  <div class="container">
+    <div class="section-header mb-section-head">
+      <div class="d-flex align-items-center">
+        <span class="section-label">Social Media</span>
+        <a href="{{ site.data.site.instagram_url }}" class="section-link ms-auto">Folge uns auf Instagram →</a>
+      </div>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="small text-muted mb-1">@rg_hamburg</p>
+    <div id="instafeed-rg" class="row g-2 mb-3">
+      {% for post in site.data.instagram.rg_hamburg.posts %}
+        <div class="col-4">
+          <div class="social-item">
+            {% if post.url %}
+              <a href="{{ post.url }}" target="_blank" rel="noopener">
+                <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="social-img" alt="{{ post.alt }}">
+              </a>
+            {% else %}
+              <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="social-img" alt="{{ post.alt }}">
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <p class="small text-muted mb-1">@bmx_rghamburg</p>
+    <div id="instafeed-bmx" class="row g-2">
+      {% for post in site.data.instagram.bmx_rghamburg.posts %}
+        <div class="col-4">
+          <div class="social-item">
+            {% if post.url %}
+              <a href="{{ post.url }}" target="_blank" rel="noopener">
+                <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="social-img" alt="{{ post.alt }}">
+              </a>
+            {% else %}
+              <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="social-img" alt="{{ post.alt }}">
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

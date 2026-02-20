@@ -1,0 +1,18 @@
+show_all_href: "#"
+
+items:
+  - title: "Bahn Pokal 2025, Runde 2"
+    date: "4. Juni 2025"
+    location: Hamburg
+    image: event-1.png
+    alt: "Bahn Pokal 2025"
+    excerpt: "Sonne und blauer Himmel, also alles perfekt für einen tollen Bahnbau-Tag. Danke an alle Helferinnen und Helfer, die sich die Zeit genommen haben und sowohl beim Entstehen der neuen Räumlichkeiten, als auch auf dem Race-Track selbst ordentlich Hand angelegt haben. Top de Luxe!"
+    href: "#"
+
+  - title: "BMX, Bundesliga 2025"
+    date: "27. Juni 2025"
+    location: Hamburg
+    image: event-2.png
+    alt: "BMX Bundesliga 2025"
+    excerpt: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    href: "#"

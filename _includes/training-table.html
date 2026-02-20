@@ -1,0 +1,44 @@
+{% assign d = include.data %}
+{% if d.training %}
+<section class="py-section bg-rg-light">
+  <div class="container">
+
+    <div class="section-header mb-section-head">
+      <span class="section-label">{{ d.training.label }}</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="training-table-wrap table-responsive">
+      <table class="table training-table">
+        <thead>
+          <tr>
+            <th>Wochentag</th>
+            <th>Uhrzeit</th>
+            <th>Art des Trainings</th>
+            <th>Trainer</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in d.training.rows %}
+            <tr>
+              <td>{{ row.day }}</td>
+              <td>{{ row.time }}</td>
+              <td>{{ row.group }}</td>
+              <td>{{ row.trainer }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {% if d.training.footnotes %}
+      <div class="training-footnote">
+        {% for fn in d.training.footnotes %}
+          <p class="{% if forloop.last %}mb-0{% else %}mb-1{% endif %}">{{ fn }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+{% endif %}

@@ -1,0 +1,15 @@
+{% assign k = site.data.kontakt %}
+<section class="bg-rg-light overflow-hidden" id="kontakt">
+  <div class="row g-0">
+    <div class="col-12 col-md-6 kontakt-img-col">
+      <img src="{{ site.baseurl }}/assets/images/{{ k.image }}" class="kontakt-img" alt="RG Hamburg Team">
+    </div>
+    <div class="col-12 col-md-6 d-flex align-items-center">
+      <div class="kontakt-content">
+        <h2 class="kontakt-heading gradient-yellow-orange text-uppercase">{{ k.heading }}</h2>
+        <p class="kontakt-text">{{ k.text }}</p>
+        <a href="{{ k.cta_href }}" class="btn btn-rg-red">{{ k.cta_label }}</a>
+      </div>
+    </div>
+  </div>
+</section>

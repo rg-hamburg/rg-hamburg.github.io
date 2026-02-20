@@ -1,0 +1,40 @@
+{% assign h = site.data.hero %}
+<section class="hero position-relative overflow-hidden">
+  <div id="heroCarousel" class="carousel carousel-fade slide h-100" data-bs-ride="carousel" data-bs-interval="5000" data-bs-touch="true">
+    <div class="carousel-inner h-100">
+      {% for slide in h.slides %}
+        <div class="carousel-item{% if forloop.first %} active{% endif %} h-100">
+          <img src="{{ site.baseurl }}/assets/images/{{ slide.image }}" class="hero-bg" alt="{{ slide.alt }}">
+        </div>
+      {% endfor %}
+    </div>
+    <button class="carousel-control-prev hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Zurück</span>
+    </button>
+    <button class="carousel-control-next hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Weiter</span>
+    </button>
+  </div>
+  <div class="hero-gradient-overlay"></div>
+  <div class="container h-100 position-absolute top-0 start-50 translate-middle-x z-1">
+    <div class="hero-text-box">
+      <h1 class="hero-heading gradient-yellow-orange text-uppercase">{{ h.heading }}</h1>
+      <p class="hero-body text-white">{{ h.subheading }}</p>
+      <a href="{{ h.cta_href }}" class="btn btn-rg-red">{{ h.cta_label }}</a>
+    </div>
+  </div>
+  <div class="hero-pagination position-absolute bottom-0 start-0 end-0 z-1">
+    <div class="container">
+      <div class="row">
+        {% for slide in h.slides %}
+          <div class="col-4 hero-pagi-item{% if forloop.first %} active{% endif %}" role="button" tabindex="0">
+            <span>{{ slide.label }}</span>
+            <div class="pagi-line"><div class="pagi-line-fill"></div></div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

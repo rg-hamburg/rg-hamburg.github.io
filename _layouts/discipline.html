@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+{% assign d = site.data[page.data_key] %}
+
+<section class="page-hero">
+  <img src="{{ site.baseurl }}/assets/images/{{ d.hero_image }}" class="page-hero-bg" alt="{{ d.hero_title }} Racing Hamburg">
+  <div class="page-hero-overlay"></div>
+  <div class="container h-100 position-relative">
+    <div class="page-hero-title-box">
+      <h1 class="page-hero-title">{{ d.hero_title }}</h1>
+    </div>
+  </div>
+</section>
+
+{% include discipline-intro.html data=d %}
+
+{% include probetraining.html %}
+
+{% include faq.html data=d %}
+
+{% include training-table.html data=d %}
+
+{% include impressions.html data=d %}
+
+{% include kontakt-teaser.html %}

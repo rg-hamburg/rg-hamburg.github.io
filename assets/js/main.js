@@ -26,7 +26,8 @@
 
 // Hero carousel — wire pagination tabs as indicators
 document.addEventListener('DOMContentLoaded', () => {
-  const carousel   = document.getElementById('heroCarousel');
+  const carousel = document.getElementById('heroCarousel');
+  if (!carousel) return;
   const bsCarousel = bootstrap.Carousel.getOrCreateInstance(carousel);
   const pagiItems  = document.querySelectorAll('.hero-pagi-item');
 

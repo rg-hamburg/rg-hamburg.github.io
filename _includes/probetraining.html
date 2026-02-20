@@ -1,0 +1,20 @@
+{% assign pt = site.data.probetraining %}
+{% if page.layout == "discipline" %}
+  {% assign cta_label = pt.cta_label_discipline %}
+{% else %}
+  {% assign cta_label = pt.cta_label %}
+{% endif %}
+<section class="bg-rg-light overflow-hidden" id="probetraining">
+  <div class="row g-0">
+    <div class="col-12 col-md-6 probetraining-img-col">
+      <img src="{{ site.baseurl }}/assets/images/{{ pt.image }}" class="probetraining-img" alt="Schnuppertraining">
+    </div>
+    <div class="col-12 col-md-6 d-flex align-items-center bg-white">
+      <div class="probetraining-content">
+        <h2 class="probetraining-heading gradient-yellow-orange text-uppercase">{{ pt.heading }}</h2>
+        <p class="probetraining-text">{{ pt.text }}</p>
+        <a href="{{ pt.cta_href }}" class="btn btn-rg-red">{{ cta_label }}</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+heading: "Ready to Race"
+subheading: "Egal, ob entspannte Gruppenfahrten, rasante Straßenrennen oder BMX Rides. Wir machen dich startklar!"
+cta_label: "Erfahre mehr"
+cta_href: "#disziplinen"
+
+slides:
+  - image: hero-road.png
+    alt: Radsport Hamburg
+    label: Rennsport
+  - image: hero-bmx.png
+    alt: BMX
+    label: BMX
+  - image: hero-gravel.png
+    alt: "Gravel & MTB"
+    label: "Gravel & MTB"

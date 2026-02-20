@@ -1,0 +1,20 @@
+rg_hamburg:
+  posts:
+    - image: social-1.png
+      alt: Instagram Post
+    - image: social-2.png
+      alt: Instagram Post
+    - image: social-3.png
+      alt: Instagram Post
+
+bmx_rghamburg:
+  posts:
+    - image: social-4.jpg
+      url: "https://www.instagram.com/p/DUNlw2CDUQv/"
+      alt: Instagram Post
+    - image: social-5.jpg
+      url: "https://www.instagram.com/p/DQ5BFU0jeUz/"
+      alt: Instagram Post
+    - image: social-6.jpg
+      url: "https://www.instagram.com/p/DPwjNRzCLrs/"
+      alt: Instagram Post

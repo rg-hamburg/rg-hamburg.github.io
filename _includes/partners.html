@@ -1,0 +1,15 @@
+<section class="py-section bg-rg-light" id="partner">
+  <div class="container">
+    <div class="section-header mb-section-head">
+      <span class="section-label">Unsere Partner</span>
+      <div class="section-line"></div>
+    </div>
+    <div class="row justify-content-center align-items-center g-5 py-2">
+      {% for partner in site.data.partners.items %}
+        <div class="col-auto">
+          <img src="{{ site.baseurl }}/assets/images/{{ partner.image }}" alt="{{ partner.name }}" class="sponsor-logo">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
