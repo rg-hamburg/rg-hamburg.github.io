@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RG Hamburg – Radsport-Gemeinschaft Hamburg von 1893 e.V.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header sticky-top">
+    <div class="nav-rainbow"></div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-rg-dark px-0">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="RG Hamburg" height="60" class="rounded-3">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigation öffnen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav nav-links ms-auto mb-0">
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold" href="#aktuelles">Aktuelles</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold" href="#disziplinen">Disziplinen</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold" href="#verein">Verein</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold" href="#partner">Partner</a></li>
+          </ul>
+          <a href="https://instagram.com" class="text-light ms-4" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero position-relative overflow-hidden">
+    <div id="heroCarousel" class="carousel carousel-fade slide h-100" data-bs-ride="carousel" data-bs-interval="5000" data-bs-touch="true">
+
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img src="assets/images/hero-road.png" class="hero-bg" alt="Radsport Hamburg">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-bmx.png" class="hero-bg" alt="BMX">
+        </div>
+        <div class="carousel-item h-100">
+          <img src="assets/images/hero-gravel.png" class="hero-bg" alt="Gravel &amp; MTB">
+        </div>
+      </div>
+      <button class="carousel-control-prev hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Zurück</span>
+      </button>
+      <button class="carousel-control-next hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Weiter</span>
+      </button>
+    </div>
+    <div class="hero-gradient-overlay"></div>
+    <div class="container h-100 position-absolute top-0 start-50 translate-middle-x z-1">
+      <div class="hero-text-box">
+        <h1 class="hero-heading gradient-yellow-orange text-uppercase">Ready to Race</h1>
+        <p class="hero-body text-white">Egal, ob entspannte Gruppenfahrten, rasante Straßenrennen oder BMX Rides. Wir machen dich startklar!</p>
+        <a href="#disziplinen" class="btn btn-rg-red">Erfahre mehr</a>
+      </div>
+    </div>
+    <div class="hero-pagination position-absolute bottom-0 start-0 end-0 z-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 hero-pagi-item active" role="button" tabindex="0">
+            <span>Rennsport</span>
+            <div class="pagi-line"><div class="pagi-line-fill"></div></div>
+          </div>
+          <div class="col-4 hero-pagi-item" role="button" tabindex="0">
+            <span>BMX</span>
+            <div class="pagi-line"><div class="pagi-line-fill"></div></div>
+          </div>
+          <div class="col-4 hero-pagi-item" role="button" tabindex="0">
+            <span>Gravel &amp; MTB</span>
+            <div class="pagi-line"><div class="pagi-line-fill"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3 DISZIPLINEN
+  ============================================================ -->
+  <section class="py-section bg-rg-light" id="disziplinen">
+    <div class="container">
+      <div class="section-header mb-section-head">
+        <span class="section-label">Unsere Disziplinen</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">
+          <article class="discipline-card">
+            <div class="discipline-img-wrap">
+              <img src="assets/images/discipline-rennsport.png" class="discipline-img" alt="Rennsport">
+            </div>
+            <div class="discipline-body p-4">
+              <h2 class="discipline-title gradient-blue text-uppercase">Rennsport</h2>
+              <p class="discipline-text">Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern.</p>
+              <a href="#" class="btn btn-rg-blue">Erfahre mehr</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <article class="discipline-card">
+            <div class="discipline-img-wrap">
+              <img src="assets/images/discipline-bmx.png" class="discipline-img" alt="BMX">
+            </div>
+            <div class="discipline-body p-4">
+              <h2 class="discipline-title gradient-blue text-uppercase">BMX</h2>
+              <p class="discipline-text">Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern.</p>
+              <a href="#" class="btn btn-rg-blue">Erfahre mehr</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <article class="discipline-card">
+            <div class="discipline-img-wrap">
+              <img src="assets/images/discipline-gravel.png" class="discipline-img" alt="Gravel &amp; MTB">
+            </div>
+            <div class="discipline-body p-4">
+              <h2 class="discipline-title gradient-blue text-uppercase">Gravel &amp; MTB</h2>
+              <p class="discipline-text">Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern.</p>
+              <a href="#" class="btn btn-rg-blue">Erfahre mehr</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROBETRAINING
+  ============================================================ -->
+  <section class="bg-rg-light overflow-hidden">
+    <div class="row g-0">
+      <div class="col-12 col-md-6 probetraining-img-col">
+        <img src="assets/images/probetraining.png" class="probetraining-img" alt="Schnuppertraining">
+      </div>
+      <div class="col-12 col-md-6 d-flex align-items-center bg-white">
+        <div class="probetraining-content">
+          <h2 class="probetraining-heading gradient-yellow-orange text-uppercase">Mach den ersten Schritt und fahr bei uns mit.</h2>
+          <p class="probetraining-text">Du liebst das Radfahren und willst wissen, wie echter Vereinsradsport aussieht? Dann steig bei unserem kostenlosen Schnuppertraining mit uns aufs Rad und erlebe Teamgeist und die Faszination des Radsports hautnah!</p>
+          <a href="#kontakt" class="btn btn-rg-red">Jetzt mitfahren</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       AKTUELLES
+  ============================================================ -->
+  <section class="py-section bg-rg-light" id="aktuelles">
+    <div class="container">
+      <div class="section-header mb-section-head">
+        <span class="section-label">Aktuelles</span>
+        <a href="#" class="section-link ms-auto">Alles anzeigen →</a>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="news-card h-100 d-flex flex-column">
+            <div class="news-img-wrap">
+              <img src="assets/images/news-1.png" class="news-img" alt="Sportler-Story Marc Teichmann">
+            </div>
+            <div class="news-body flex-grow-1 d-flex flex-column p-3">
+              <span class="news-date">April, 2025</span>
+              <hr class="news-divider">
+              <h3 class="news-title">Sportler-Story – heute: Marc Teichmann</h3>
+              <p class="news-text flex-grow-1">Sonne und blauer Himmel, also alles perfekt für einen tollen Bahnbau-Tag. Danke an alle Helferinnen und Helfer, die sich die Zeit genommen haben und sowohl beim Entstehen der neuen Räumlichkeiten, als auch auf dem Race-Track selbst ordentlich Hand angelegt haben.</p>
+              <a href="#" class="news-arrow mt-auto">→</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="news-card h-100 d-flex flex-column">
+            <div class="news-img-wrap">
+              <img src="assets/images/news-2.png" class="news-img" alt="Jahreshauptversammlung">
+            </div>
+            <div class="news-body flex-grow-1 d-flex flex-column p-3">
+              <span class="news-date">Februar, 2025</span>
+              <hr class="news-divider">
+              <h3 class="news-title">Einladung zur Jahreshauptversammlung am 05. März 2024</h3>
+              <p class="news-text flex-grow-1">Jahreshauptversammlung der RG Hamburg. Liebe RG-Hamburgerinnen und RG-Hamburger, am Dienstag, den 05. März 2025, um 18:30 Uhr findet im Vereinsheim des TSV Sasel unsere diesjährige Jahreshauptversammlung statt.</p>
+              <a href="#" class="news-arrow mt-auto">→</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="news-card h-100 d-flex flex-column">
+            <div class="news-img-wrap">
+              <img src="assets/images/news-3.png" class="news-img" alt="Radsport Nachwuchs">
+            </div>
+            <div class="news-body flex-grow-1 d-flex flex-column p-3">
+              <span class="news-date">September, 2024</span>
+              <hr class="news-divider">
+              <h3 class="news-title">Cum sociis natoque penatibus et</h3>
+              <p class="news-text flex-grow-1">Lipsky Stefanie (RG Hamburg von 1893 e.V.), Sigmund Marla (FC St. Pauli), Alpmann Hanna (RV Pfeil Tübingen 1905) Rieckmann Felix (Harburger RG von 1951), Behrens Niklas (LTF - LIDL-TREK FUTURE RACING), Ehret Nicolas (Bike Market Team).</p>
+              <a href="#" class="news-arrow mt-auto">→</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="news-card h-100 d-flex flex-column">
+            <div class="news-img-wrap">
+              <img src="assets/images/news-4.png" class="news-img" alt="BMX Bundesliga">
+            </div>
+            <div class="news-body flex-grow-1 d-flex flex-column p-3">
+              <span class="news-date">September, 2024</span>
+              <hr class="news-divider">
+              <h3 class="news-title">Lorem ipsum dolores larifari</h3>
+              <p class="news-text flex-grow-1">Liebe BMX-Fahrerinnen und Fahrer sowie Unterstützer, wir freuen uns, euch herzlich zum BMX-Bundesligarennen Lauf 7 und 8 inklusive der Gesamtwertungsehrung in Hamburg einzuladen!</p>
+              <a href="#" class="news-arrow mt-auto">→</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VERANSTALTUNGEN
+  ============================================================ -->
+  <section class="py-section bg-rg-light" id="veranstaltungen">
+    <div class="container">
+      <div class="section-header mb-section-head">
+        <span class="section-label">Veranstaltungen</span>
+        <a href="#" class="section-link ms-auto">Alles anzeigen →</a>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6">
+          <article class="event-card h-100 d-flex flex-column">
+            <div class="event-img-wrap position-relative">
+              <img src="assets/images/event-1.png" class="event-img" alt="Bahn Pokal 2025">
+              <div class="event-badge d-flex align-items-center px-3">
+                <span class="event-date-badge d-flex align-items-center gap-2">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                  4. Juni 2025
+                </span>
+                <span class="event-location-badge ms-auto">Hamburg</span>
+              </div>
+            </div>
+            <hr class="event-divider mx-3 my-0">
+            <div class="event-body flex-grow-1 d-flex flex-column p-3">
+              <h3 class="event-title">Bahn Pokal 2025, Runde 2</h3>
+              <p class="event-text flex-grow-1">Sonne und blauer Himmel, also alles perfekt für einen tollen Bahnbau-Tag. Danke an alle Helferinnen und Helfer, die sich die Zeit genommen haben und sowohl beim Entstehen der neuen Räumlichkeiten, als auch auf dem Race-Track selbst ordentlich Hand angelegt haben. Top de Luxe!</p>
+              <a href="#" class="news-arrow mt-auto">→</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <article class="event-card h-100 d-flex flex-column">
+            <div class="event-img-wrap position-relative">
+              <img src="assets/images/event-2.png" class="event-img" alt="BMX Bundesliga 2025">
+              <div class="event-badge d-flex align-items-center px-3">
+                <span class="event-date-badge d-flex align-items-center gap-2">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+                  27. Juni 2025
+                </span>
+                <span class="event-location-badge ms-auto">Hamburg</span>
+              </div>
+            </div>
+            <hr class="event-divider mx-3 my-0">
+            <div class="event-body flex-grow-1 d-flex flex-column p-3">
+              <h3 class="event-title">BMX, Bundesliga 2025</h3>
+              <p class="event-text flex-grow-1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <a href="#" class="news-arrow mt-auto">→</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       UNSERE PARTNER
+  ============================================================ -->
+  <section class="py-section bg-rg-light" id="partner">
+    <div class="container">
+      <div class="section-header mb-section-head">
+        <span class="section-label">Unsere Partner</span>
+        <a href="#" class="section-link ms-auto">Alle Partner →</a>
+      </div>
+      <div class="row justify-content-center align-items-center g-5 py-2">
+        <div class="col-auto">
+          <img src="assets/images/sponsor-sparkasse.png" alt="Sparkasse Holstein" class="sponsor-logo">
+        </div>
+        <div class="col-auto">
+          <img src="assets/images/sponsor-activecity.png" alt="Active City Hamburg" class="sponsor-logo">
+        </div>
+        <div class="col-auto">
+          <img src="assets/images/sponsor-mgf.png" alt="MGF Gartenstadt Farmsen" class="sponsor-logo">
+        </div>
+        <div class="col-auto">
+          <img src="assets/images/sponsor-velux.png" alt="Velux" class="sponsor-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SOCIAL MEDIA
+  ============================================================ -->
+  <section class="py-section bg-rg-light">
+    <div class="container">
+      <div class="section-header mb-section-head">
+        <span class="section-label">Social Media</span>
+        <a href="https://instagram.com" class="section-link ms-auto">Folge uns auf Instagram →</a>
+      </div>
+      <div class="row g-2">
+        <div class="col-4 col-md-2"><div class="social-item"><img src="assets/images/social-1.png" class="social-img" alt="Instagram Post"></div></div>
+        <div class="col-4 col-md-2"><div class="social-item"><img src="assets/images/social-2.png" class="social-img" alt="Instagram Post"></div></div>
+        <div class="col-4 col-md-2"><div class="social-item"><img src="assets/images/social-3.png" class="social-img" alt="Instagram Post"></div></div>
+        <div class="col-4 col-md-2"><div class="social-item"><img src="assets/images/social-4.png" class="social-img" alt="Instagram Post"></div></div>
+        <div class="col-4 col-md-2"><div class="social-item"><img src="assets/images/social-5.png" class="social-img" alt="Instagram Post"></div></div>
+        <div class="col-4 col-md-2"><div class="social-item"><img src="assets/images/social-6.png" class="social-img" alt="Instagram Post"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KONTAKT-TEASER
+  ============================================================ -->
+  <section class="bg-rg-light overflow-hidden" id="kontakt">
+    <div class="row g-0">
+      <div class="col-12 col-md-6 kontakt-img-col">
+        <img src="assets/images/kontakt.png" class="kontakt-img" alt="RG Hamburg Team">
+      </div>
+      <div class="col-12 col-md-6 d-flex align-items-center">
+        <div class="kontakt-content">
+          <h2 class="kontakt-heading gradient-yellow-orange text-uppercase">Noch Fragen? Du möchtest Mitglied werden?</h2>
+          <p class="kontakt-text">Kein Problem: Nehme Kontakt zu uns auf und wir werden uns umgehend melden.</p>
+          <a href="#" class="btn btn-rg-red">Kontaktformular</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="bg-rg-dark py-4" id="verein">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-4">
+        <div class="d-flex align-items-start align-items-md-center gap-3 flex-shrink-0">
+          <img src="assets/images/footer-logo.png" alt="RG Hamburg" width="64" height="64" class="rounded-3 border border-2 border-white flex-shrink-0">
+          <address class="footer-address mb-0">
+            Radsport-Gemeinschaft Hamburg von 1893 e.V.<br>
+            Stormsweg 3<br>
+            22085 Hamburg
+          </address>
+        </div>
+        <div class="footer-divider flex-shrink-0 d-none d-md-block"></div>
+        <nav class="footer-nav flex-grow-1">
+          <a href="#">Mitglied werden</a>
+          <a href="#">Mitgliederbereich</a>
+          <a href="#">Zeitmessung</a>
+          <a href="#">BMX-Bahn</a>
+          <a href="#">EasyVerein</a>
+          <a href="#">Kontakt</a>
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </nav>
+        <a href="https://instagram.com" class="text-light opacity-75 flex-shrink-0" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

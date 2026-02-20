@@ -1,0 +1,531 @@
+/* ============================================================
+   BRAND TOKENS — override Bootstrap where needed
+============================================================ */
+:root {
+  --bs-font-sans-serif: 'Kanit', sans-serif;
+  --bs-body-font-family: 'Kanit', sans-serif;
+
+  --rg-dark:        #000812;
+  --rg-red:         #e30613;
+  --rg-blue:        #004dff;
+  --rg-light:       #eef2f5;
+  --rg-text-grey:   #626f78;
+
+  --rg-gradient-rainbow:      linear-gradient(90deg, #e30613 0%, #f17a0a 25%, #ffed00 45%, #05b7f8 70%, #004f9f 100%);
+  --rg-gradient-yellow-orange: linear-gradient(137deg, #ffed00 0.8%, #f17a0a 46%);
+  --rg-gradient-blue:          linear-gradient(162deg, #004dff 22%, #0077ff 50%);
+}
+
+/* ============================================================
+   GLOBAL
+============================================================ */
+body {
+  color: var(--rg-text-grey);
+}
+
+/* Wider container for 1440px designs */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/* Spacing helpers */
+.py-section       { padding-top: 80px; padding-bottom: 80px; }
+.mb-section-head  { margin-bottom: 48px; }
+
+/* ============================================================
+   COLOR UTILITIES
+============================================================ */
+.bg-rg-dark  { background-color: var(--rg-dark) !important; }
+.bg-rg-light { background-color: var(--rg-light) !important; }
+
+.gradient-yellow-orange {
+  background: var(--rg-gradient-yellow-orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-blue {
+  background: var(--rg-gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+.btn {
+  font-family: var(--bs-body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 32px;
+  padding: 4px 28px;
+  line-height: 36px;
+  border: none;
+}
+
+.btn-rg-red  { background: var(--rg-red);  color: #fff; }
+.btn-rg-blue { background: var(--rg-blue); color: #fff; }
+.btn-rg-red:hover,
+.btn-rg-blue:hover { opacity: 0.85; color: #fff; }
+
+/* ============================================================
+   NAVIGATION
+============================================================ */
+.nav-rainbow {
+  height: 10px;
+  background: var(--rg-gradient-rainbow);
+}
+
+.navbar { height: 100px; }
+
+@media (max-width: 767.98px) {
+  .navbar { height: auto; min-height: 72px; }
+}
+
+.nav-links .nav-link {
+  color: #eef2f5cc;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  padding: 0 15px;
+}
+
+.nav-links .nav-link:hover { color: #fff; }
+
+/* ============================================================
+   HERO
+============================================================ */
+.hero {
+  height: 690px;
+}
+
+/* Lift controls above the text/gradient overlays */
+.hero-control {
+  z-index: 10;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-gradient-overlay {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 55%;
+  background: linear-gradient(to top, rgba(5,8,12,0.78), rgba(5,8,12,0));
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 280px;
+  width: 660px;
+  background: rgba(5, 8, 12, 0.75);
+  border-radius: 15px;
+  padding: 28px 45px 36px;
+}
+
+.hero-heading {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-body {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+/* Hero pagination tabs */
+.hero-pagination { padding-bottom: 20px; }
+
+.hero-pagi-item {
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.hero-pagi-item span {
+  display: block;
+  font-size: 17px;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 8px;
+}
+
+.hero-pagi-item.active span { color: #fff; }
+
+.hero-pagi-item.active .pagi-line-fill {
+  animation: pagiProgress 5s linear forwards;
+}
+
+.pagi-line {
+  height: 2px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 2px;
+}
+
+@keyframes pagiProgress {
+  from { width: 0% }
+  to   { width: 100% }
+}
+
+.pagi-line-fill {
+  height: 100%;
+  width: 0%;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* ============================================================
+   SECTION HEADER
+============================================================ */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-label {
+  font-size: 18px;
+  color: var(--rg-text-grey);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.section-link {
+  font-size: 18px;
+  color: var(--rg-text-grey);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.section-link:hover { color: var(--rg-dark); }
+
+/* Line runs between label and link (or fills after label if no link) */
+.section-header:has(.section-link) .section-label::after {
+  /* use a flex spacer div instead */
+  content: none;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: var(--rg-text-grey);
+  opacity: 0.3;
+}
+
+/* ============================================================
+   DISCIPLINES
+============================================================ */
+.discipline-card {
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.discipline-img-wrap {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.discipline-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.discipline-card:hover .discipline-img { transform: scale(1.04); }
+
+.discipline-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.discipline-text {
+  font-size: 17px;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+/* ============================================================
+   PROBETRAINING (split)
+============================================================ */
+.probetraining-img-col { min-height: 600px; }
+
+.probetraining-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.probetraining-content {
+  padding: 80px 80px 80px 100px;
+}
+
+.probetraining-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.probetraining-text {
+  font-size: 21px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* ============================================================
+   NEWS (AKTUELLES)
+============================================================ */
+.news-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.news-img-wrap {
+  aspect-ratio: 334 / 194;
+  overflow: hidden;
+}
+
+.news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-date {
+  display: block;
+  font-size: 15px;
+  color: var(--rg-text-grey);
+  margin-bottom: 10px;
+}
+
+.news-divider {
+  border-color: rgba(98,111,120,0.2);
+  margin: 0 0 14px;
+  opacity: 1;
+}
+
+.news-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--rg-dark);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.news-text {
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-arrow {
+  font-size: 28px;
+  color: var(--rg-text-grey);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.news-arrow:hover { color: var(--rg-dark); }
+
+/* ============================================================
+   EVENTS (VERANSTALTUNGEN)
+============================================================ */
+.event-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.event-img-wrap { position: relative; }
+
+.event-img {
+  width: 100%;
+  aspect-ratio: 688 / 400;
+  object-fit: cover;
+  display: block;
+}
+
+.event-badge {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--rg-red);
+  padding: 10px 16px;
+}
+
+.event-date-badge,
+.event-location-badge {
+  font-size: 15px;
+  color: #fff;
+}
+
+.event-divider {
+  border-color: rgba(98,111,120,0.2);
+  opacity: 1;
+}
+
+.event-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--rg-dark);
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.event-text {
+  font-size: 15px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+/* ============================================================
+   PARTNERS
+============================================================ */
+.sponsor-logo {
+  max-height: 90px;
+  max-width: 200px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter 0.2s;
+}
+
+.sponsor-logo:hover { filter: none; }
+
+/* ============================================================
+   SOCIAL MEDIA
+============================================================ */
+.social-item {
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.social-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.social-item:hover .social-img { transform: scale(1.06); }
+
+/* ============================================================
+   KONTAKT TEASER (split)
+============================================================ */
+.kontakt-img-col { min-height: 539px; }
+
+.kontakt-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kontakt-content {
+  padding: 80px 80px 80px 100px;
+}
+
+.kontakt-heading {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.kontakt-text {
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--rg-text-grey);
+  margin-bottom: 32px;
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.footer-address {
+  font-size: 14px;
+  line-height: 1.8;
+  color: rgba(217, 217, 217, 0.85);
+  text-transform: uppercase;
+}
+
+.footer-divider {
+  width: 1px;
+  height: 64px;
+  background: rgba(255,255,255,0.15);
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.footer-nav a {
+  font-size: 14px;
+  color: rgba(217, 217, 217, 0.75);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover { color: #fff; }
+
+/* ============================================================
+   RESPONSIVE BREAKPOINTS
+============================================================ */
+
+/* Section spacing */
+@media (max-width: 767.98px) {
+  .py-section      { padding-top: 48px; padding-bottom: 48px; }
+  .mb-section-head { margin-bottom: 28px; }
+}
+
+/* Hero */
+@media (max-width: 767.98px) {
+  .hero                { height: 480px; }
+  .hero-text-box       { top: 120px; width: 100%; padding: 20px 24px 28px; }
+  .hero-heading        { font-size: 30px; margin-bottom: 14px; }
+  .hero-body           { font-size: 16px; margin-bottom: 20px; }
+  .hero-pagi-item span { font-size: 13px; }
+  /* vertical spacing for nav links in collapsed mobile menu */
+  .nav-links .nav-link { padding: 8px 0; }
+}
+
+/* Split sections (Probetraining + Kontakt) */
+@media (max-width: 767.98px) {
+  .probetraining-img-col,
+  .kontakt-img-col    { min-height: 260px; }
+  .probetraining-content,
+  .kontakt-content    { padding: 40px 24px; }
+  .probetraining-heading,
+  .kontakt-heading    { font-size: 30px; }
+  .probetraining-text,
+  .kontakt-text       { font-size: 16px; margin-bottom: 24px; }
+}
+
+/* Buttons */
+@media (max-width: 767.98px) {
+  .btn { font-size: 16px; }
+}
