@@ -37,7 +37,7 @@ body {
 }
 
 /* Spacing helpers */
-.py-section       { padding-top: 56px; padding-bottom: 80px; }
+.py-section       { padding-top: 28px; padding-bottom: 40px; }
 .mb-section-head  { margin-bottom: 48px; }
 
 /* ============================================================
@@ -571,7 +571,7 @@ body {
 
 /* Section spacing */
 @media (max-width: 767.98px) {
-  .py-section      { padding-top: 32px; padding-bottom: 48px; }
+  .py-section      { padding-top: 16px; padding-bottom: 24px; }
   .mb-section-head { margin-bottom: 28px; }
 }
 
@@ -718,6 +718,43 @@ body {
   .intro-heading    { font-size: 36px; }
   .intro-text       { font-size: 18px; }
   .intro-subheading { font-size: 26px; }
+}
+
+/* Bare elements generated from Markdown in discipline intro */
+.intro-section h2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  background: var(--rg-gradient-yellow-orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 28px;
+}
+
+.intro-section h3 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--rg-text-grey);
+  margin-top: 48px;
+  margin-bottom: 20px;
+}
+
+.intro-section p:not(.intro-caption) {
+  font-size: 24px;
+  line-height: 1.46;
+  color: var(--rg-text-grey);
+}
+
+.intro-section p:not(.intro-caption) + p:not(.intro-caption) {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .intro-section h2 { font-size: 36px; }
+  .intro-section h3 { font-size: 26px; }
+  .intro-section p:not(.intro-caption) { font-size: 18px; }
 }
 
 /* ============================================================

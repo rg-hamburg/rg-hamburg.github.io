@@ -7,17 +7,16 @@
       <div class="section-line"></div>
     </div>
 
-    <h2 class="intro-heading">{{ d.intro_heading }}</h2>
-    <p class="intro-text">{{ d.intro_text }}</p>
+    {% assign intro_parts = include.intro_content | split: '</p>' %}
+    {{ intro_parts[0] }}</p>
 
     <div class="intro-img-wrap" style="max-height: 580px;">
-      <img src="{{ site.baseurl }}/assets/images/{{ d.intro_image }}" class="intro-img" style="max-height: 580px;" alt="{{ d.intro_image_alt }}">
+      <img src="{{ site.baseurl }}/assets/images/{{ page.intro_image }}" class="intro-img" style="max-height: 580px;" alt="{{ page.intro_image_alt }}">
     </div>
-    <p class="intro-caption">{{ d.intro_caption }}</p>
+    <p class="intro-caption">{{ page.intro_caption }}</p>
 
-    <h3 class="intro-subheading">{{ d.intro_subheading }}</h3>
-    {% for para in d.intro_paragraphs %}
-      <p class="text{% unless forloop.first %} mt-4{% endunless %}">{{ para }}</p>
+    {% for part in intro_parts offset: 1 %}
+      {% if part != '' %}{{ part }}</p>{% endif %}
     {% endfor %}
 
   </div>
