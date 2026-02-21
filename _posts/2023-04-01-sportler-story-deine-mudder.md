@@ -1,6 +1,6 @@
 ---
-title: "Sportler-Story – heute: Marc Teichmann"
-date: 2025-04-01
+title: "Sportler-Story – heute: Deine Mudder"
+date: 2023-04-01
 image: news-1.png
 alt: "Sportler-Story Marc Teichmann"
 ---

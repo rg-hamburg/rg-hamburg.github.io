@@ -3,7 +3,9 @@
     <div class="section-header mb-section-head">
       <div class="d-flex align-items-center">
         <span class="section-label">Veranstaltungen</span>
-        <a href="{{ site.data.events.show_all_href }}" class="section-link ms-auto">Alles anzeigen →</a>
+        {% unless page.layout == "aktuelles" %}
+          <a href="/aktuelles/" class="section-link ms-auto">Alles anzeigen →</a>
+        {% endunless %}
       </div>
       <div class="section-line"></div>
     </div>
@@ -25,7 +27,6 @@
             <div class="event-body flex-grow-1 d-flex flex-column p-3">
               <h3 class="event-title">{{ event.title }}</h3>
               <p class="event-text flex-grow-1">{{ event.excerpt }}</p>
-              <a href="{{ event.href }}" class="news-arrow mt-auto">→</a>
             </div>
           </article>
         </div>

@@ -3,13 +3,20 @@
     <div class="section-header mb-section-head">
       <div class="d-flex align-items-center">
         <span class="section-label">Aktuelles</span>
-        <a href="/aktuelles/" class="section-link ms-auto">Alles anzeigen →</a>
+        {% unless page.layout == "aktuelles" %}
+          <a href="/aktuelles/" class="section-link ms-auto">Alles anzeigen →</a>
+        {% endunless %}
       </div>
       <div class="section-line"></div>
     </div>
     <div class="row g-4">
-      {% for post in site.posts %}
-        <div class="col-12 col-sm-6 col-lg-3">
+      {% if page.layout == "aktuelles" %}
+        {% assign news_posts = site.posts %}
+      {% else %}
+        {% assign news_posts = site.posts | slice: 0, 4 %}
+      {% endif %}
+      {% for post in news_posts %}
+        <div class="col-12 col-sm-6 col-lg-3" data-post-idx="{{ forloop.index0 }}">
           <article class="news-card h-100 d-flex flex-column">
             <div class="news-img-wrap">
               <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="news-img" alt="{{ post.alt }}">
@@ -19,7 +26,9 @@
               <hr class="news-divider">
               <h3 class="news-title">{{ post.title }}</h3>
               <p class="news-text flex-grow-1">{{ post.excerpt }}</p>
-              <a href="{{ post.url }}" class="news-arrow mt-auto">→</a>
+              {% unless page.layout == "aktuelles" %}
+                <a href="{{ post.url }}" class="news-arrow mt-auto ms-auto">Weiterlesen →</a>
+              {% endunless %}
             </div>
           </article>
         </div>

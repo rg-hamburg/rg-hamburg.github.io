@@ -16,3 +16,58 @@ layout: default
 {% include events.html %}
 
 {% include news.html %}
+
+<div id="aktuelles-pagination" class="bg-rg-light py-4 d-flex justify-content-center align-items-center gap-3" style="display:none"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var PAGE1 = 4, PAGEN = 6;
+  var cards = Array.from(document.querySelectorAll('[data-post-idx]'));
+  var eventsSection = document.getElementById('veranstaltungen');
+  var pager = document.getElementById('aktuelles-pagination');
+  if (cards.length <= PAGE1) return;
+
+  var total = cards.length;
+  var totalPages = 1 + Math.ceil((total - PAGE1) / PAGEN);
+  var page = 1;
+
+  function show(p) {
+    page = p;
+    if (p === 1) {
+      eventsSection.style.display = '';
+      cards.forEach(function (c, i) { c.style.display = i < PAGE1 ? '' : 'none'; });
+    } else {
+      eventsSection.style.display = 'none';
+      var start = PAGE1 + (p - 2) * PAGEN;
+      cards.forEach(function (c, i) {
+        c.style.display = (i >= start && i < start + PAGEN) ? '' : 'none';
+      });
+    }
+    render();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function mkBtn(label, targetPage) {
+    var el = document.createElement('button');
+    el.textContent = label;
+    el.className = 'btn btn-rg-outline';
+    el.onclick = function () { show(targetPage); };
+    return el;
+  }
+
+  function render() {
+    pager.style.display = 'flex';
+    pager.innerHTML = '';
+    if (page > 1) pager.appendChild(mkBtn('← Neuere', page - 1));
+    var info = document.createElement('span');
+    info.style.color = 'var(--rg-text-grey)';
+    info.textContent = 'Seite ' + page + ' von ' + totalPages;
+    pager.appendChild(info);
+    if (page < totalPages) pager.appendChild(mkBtn('Ältere →', page + 1));
+  }
+
+  show(1);
+});
+</script>
+
+{% include probetraining.html %}

@@ -79,6 +79,8 @@ body {
 .btn-rg-blue { background: var(--rg-blue); color: #fff; }
 .btn-rg-red:hover,
 .btn-rg-blue:hover { opacity: 0.85; color: #fff; }
+.btn-rg-outline { background: transparent; color: var(--rg-text-grey); border: 1.5px solid var(--rg-text-grey); }
+.btn-rg-outline:hover { background: var(--rg-text-grey); color: #fff; }
 
 /* ============================================================
    NAVIGATION
@@ -412,10 +414,13 @@ body {
 }
 
 .news-arrow {
-  font-size: 28px;
+  font-size: 13px;
+  font-weight: 600;
   color: var(--rg-text-grey);
   text-decoration: none;
   transition: color 0.2s;
+  display: block;
+  text-align: right;
 }
 
 .news-arrow:hover { color: var(--rg-dark); }
@@ -656,9 +661,13 @@ body {
   margin: 0;
 }
 
+@media (max-width: 1024.98px) {
+  .page-hero-title { font-size: 80px; }
+}
+
 @media (max-width: 767.98px) {
   .page-hero            { height: 240px; }
-  .page-hero-title      { font-size: 72px; }
+  .page-hero-title      { font-size: 56px; }
   .page-hero-title-box  { bottom: 32px; padding: 8px 24px 12px; }
 }
 

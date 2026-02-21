@@ -26,6 +26,8 @@ docker compose up        # → http://localhost:4000
 |--------|------|----------|
 | `default` | `_layouts/default.html` | Base layout (nav, footer, scripts) |
 | `discipline` | `_layouts/discipline.html` | Disziplinen pages — reads `site.data[page.data_key]` |
+| `aktuelles` | `_layouts/aktuelles.html` | Aktuelles listing page — page-hero, events, news, pagination, probetraining |
+| `post` | `_layouts/post.html` | Single news post — page-hero (uses `page.image`), prose content, probetraining |
 | `prose` | `_layouts/prose.html` | Info/legal pages — pure Markdown, no HTML boilerplate |
 
 ### `prose` layout
@@ -36,12 +38,28 @@ Add `layout: prose` and `section_label: <Chip Text>` to front matter. The layout
 
 ## Content editing
 
-All editable content lives in `_data/`:
+### News (`_posts/`)
+
+News articles are Jekyll posts. Create a file `_posts/YYYY-MM-DD-slug.md` with:
+
+```yaml
+---
+title: "Article title"
+date: YYYY-MM-DD
+image: news-1.png       # image from assets/images/
+alt: "Image alt text"
+---
+
+Article body in Markdown. The first paragraph becomes the card excerpt automatically.
+```
+
+Posts are automatically available at `/aktuelles/YYYY/slug/`. The `_includes/news.html` renders cards from `site.posts` (newest first).
+
+### Other data files in `_data/`:
 
 | File | Controls |
 |------|----------|
 | `site.yaml` | Nav links, footer links, social URLs, **hero carousel**, **discipline cards**, **partner logos** |
-| `news.yaml` | Aktuelles cards |
 | `events.yaml` | Veranstaltungen cards |
 | `probetraining.yaml` | Probetraining section |
 | `kontakt.yaml` | Kontakt-Teaser section |
@@ -54,6 +72,8 @@ Hero, disciplines, and partners are embedded in `site.yaml` under `hero:`, `disc
 | URL | File |
 |-----|------|
 | `/` | `index.html` |
+| `/aktuelles/` | `aktuelles.md` |
+| `/aktuelles/YYYY/slug/` | `_posts/YYYY-MM-DD-slug.md` |
 | `/disziplinen/bmx/` | `disziplinen/bmx.md` |
 | `/disziplinen/rennsport/` | `disziplinen/rennsport.md` |
 | `/disziplinen/gravel/` | `disziplinen/gravel.md` |
@@ -92,7 +112,7 @@ CSS custom properties (`:root` in `style.css`):
 | `--rg-light` | `#eef2f5` | Section backgrounds |
 | `--rg-text-grey` | `#626f78` | Body copy, labels |
 
-Key utility classes: `.py-section`, `.mb-section-head`, `.section-label`, `.section-line`, `.gradient-yellow-orange`, `.gradient-blue`, `.btn-rg-red`, `.btn-rg-blue`
+Key utility classes: `.py-section`, `.mb-section-head`, `.section-label`, `.section-line`, `.gradient-yellow-orange`, `.gradient-blue`, `.btn-rg-red`, `.btn-rg-blue`, `.btn-rg-outline`
 
 ### Active nav link
 
