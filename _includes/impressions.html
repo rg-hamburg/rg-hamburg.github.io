@@ -21,12 +21,21 @@
 
     <div id="{{ carousel_id }}" class="carousel slide impressions-carousel" data-bs-ride="false">
       <div class="carousel-inner">
-        {% for img_name in carousel_imgs %}
-        <div class="carousel-item{% if forloop.first %} active{% endif %}">
-          <img src="{{ site.baseurl }}/assets/images/impressions/{{ img_name }}"
-               class="d-block impressions-carousel-img"
-               alt="Impression {{ forloop.index }}">
-        </div>
+        {% assign slides_count = carousel_imgs.size | plus: 2 | divided_by: 3 %}
+        {% for slide_i in (1..slides_count) %}
+          {% assign offset = forloop.index0 | times: 3 %}
+          {% assign slide_imgs = carousel_imgs | slice: offset, 3 %}
+          <div class="carousel-item{% if forloop.first %} active{% endif %}">
+            <div class="row g-3">
+              {% for img_name in slide_imgs %}
+              <div class="col-4">
+                <img src="{{ site.baseurl }}/assets/images/impressions/{{ img_name }}"
+                     class="impressions-carousel-img"
+                     alt="Impression {{ offset | plus: forloop.index }}">
+              </div>
+              {% endfor %}
+            </div>
+          </div>
         {% endfor %}
       </div>
       <button class="carousel-control-prev impressions-ctrl" type="button"
