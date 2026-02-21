@@ -144,6 +144,28 @@ body {
   .nav-links .dropdown-item { font-size: 16px; padding: 6px 0; }
 }
 
+/* Active nav indicator — yellow bar at bottom of navbar */
+@media (min-width: 768px) {
+  .navbar-collapse { align-self: stretch; }
+  .nav-links { height: 100%; }
+  .nav-links .nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .nav-links .nav-item:has(.text-rg-yellow)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 3px;
+    background: #ffed00;
+    border-radius: 2px 2px 0 0;
+  }
+}
+
 /* ============================================================
    HERO
 ============================================================ */
