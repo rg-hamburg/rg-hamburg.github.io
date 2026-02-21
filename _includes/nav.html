@@ -12,9 +12,25 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav nav-links ms-auto mb-0">
           {% for item in site.data.site.nav %}
-            <li class="nav-item">
-              <a class="nav-link text-uppercase fw-semibold{% if item.id == page.active_nav %} text-rg-yellow{% endif %}" href="{{ site.baseurl }}{{ item.href }}">{{ item.label }}</a>
-            </li>
+            {% if item.dropdown %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-uppercase fw-semibold{% if item.id == page.active_nav %} text-rg-yellow{% endif %}"
+                   href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ item.label }}</a>
+                <ul class="dropdown-menu">
+                  {% for disc in site.data.site.disciplines %}
+                    <li>
+                      <a class="dropdown-item{% if page.url == disc.url %} active{% endif %}"
+                         href="{{ site.baseurl }}{{ disc.url }}">{{ disc.name }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <a class="nav-link text-uppercase fw-semibold{% if item.id == page.active_nav %} text-rg-yellow{% endif %}"
+                   href="{{ site.baseurl }}{{ item.href }}">{{ item.label }}</a>
+              </li>
+            {% endif %}
           {% endfor %}
         </ul>
         <a href="{{ instagram_url }}" class="text-light ms-4" aria-label="Instagram">

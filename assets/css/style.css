@@ -103,6 +103,47 @@ body {
 
 .nav-links .nav-link:hover { color: #fff; }
 
+.nav-links .dropdown-menu {
+  background: var(--rg-dark);
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-radius: 0 0 8px 8px;
+  min-width: 0;
+  padding: 8px 0;
+}
+
+.nav-links .dropdown-item {
+  color: #eef2f5cc;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.nav-links .dropdown-item:hover,
+.nav-links .dropdown-item:focus {
+  background: transparent;
+  color: #fff;
+}
+
+.nav-links .dropdown-item.active {
+  background: transparent;
+  color: #ffed00;
+}
+
+@media (max-width: 767.98px) {
+  /* vertical spacing for nav links in collapsed mobile menu */
+  .nav-links .nav-link { padding: 8px 0; }
+  .nav-links .dropdown-menu {
+    border-top: none;
+    border-radius: 0;
+    padding: 0 0 8px 12px;
+  }
+  .nav-links .dropdown-item { font-size: 16px; padding: 6px 0; }
+}
+
 /* ============================================================
    HERO
 ============================================================ */
@@ -519,8 +560,6 @@ body {
   .hero-heading        { font-size: 30px; margin-bottom: 14px; }
   .hero-body           { font-size: 16px; margin-bottom: 20px; }
   .hero-pagi-item span { font-size: 13px; }
-  /* vertical spacing for nav links in collapsed mobile menu */
-  .nav-links .nav-link { padding: 8px 0; }
 }
 
 /* Split sections (Probetraining + Kontakt) */

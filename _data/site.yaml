@@ -14,7 +14,7 @@ nav:
     href: "/#aktuelles"
   - id: disziplinen
     label: Disziplinen
-    href: "/disziplinen/bmx/"
+    dropdown: true
   - id: verein
     label: Verein
     href: "/#verein"
