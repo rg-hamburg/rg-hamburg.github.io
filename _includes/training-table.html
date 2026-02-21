@@ -31,11 +31,9 @@
       </table>
     </div>
 
-    {% if d.training.footnotes %}
+    {% if d.training.footnote %}
       <div class="training-footnote">
-        {% for fn in d.training.footnotes %}
-          <p class="{% if forloop.last %}mb-0{% else %}mb-1{% endif %}">{{ fn }}</p>
-        {% endfor %}
+        <p class="mb-0">{{ d.training.footnote }}</p>
       </div>
     {% endif %}
 

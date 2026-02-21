@@ -840,9 +840,9 @@ body {
 .training-table thead th {
   background: var(--rg-text-grey);
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 28px 20px;
+  padding: 16px 20px;
   border: none;
   vertical-align: middle;
 }
@@ -850,17 +850,20 @@ body {
 .training-table tbody tr:nth-child(odd)  td { background: #fff; }
 .training-table tbody tr:nth-child(even) td { background: var(--rg-light); }
 
+.training-table thead th:nth-child(2),
+.training-table tbody td:nth-child(2) { white-space: nowrap; }
+
 .training-table tbody td {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--rg-text-grey);
-  padding: 28px 20px;
+  padding: 16px 20px;
   border-color: #d2dae4;
   vertical-align: middle;
 }
 
 .training-footnote {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.55;
   color: #9da4ae;
   margin-top: 24px;
@@ -868,7 +871,7 @@ body {
 
 @media (max-width: 767.98px) {
   .training-table thead th,
-  .training-table tbody td { font-size: 16px; padding: 16px 12px; }
+  .training-table tbody td { font-size: 14px; padding: 12px 10px; }
 }
 
 /* ============================================================
