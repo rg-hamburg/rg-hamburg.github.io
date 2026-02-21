@@ -27,7 +27,7 @@
               <span class="news-date">{{ post.date | date: "%-d." }} {{ months_de[month_idx] }} {{ post.date | date: "%Y" }}</span>
               <hr class="news-divider">
               <h3 class="news-title"><a href="{{ post.url }}" class="news-title-link">{{ post.title }}</a></h3>
-              <p class="news-text flex-grow-1">{{ post.excerpt }}</p>
+              <div class="news-text flex-grow-1">{{ post.excerpt }}</div>
               <a href="{{ post.url }}" class="news-arrow mt-auto ms-auto">Weiterlesen →</a>
             </div>
           </article>
