@@ -918,25 +918,25 @@ body {
 ============================================================ */
 .impressions-section { padding-top: 56px; padding-bottom: 80px; }
 
-.impressions-img {
-  border-radius: 15px;
-  aspect-ratio: 1;
-  object-fit: cover;
+.impressions-carousel .carousel-item { border-radius: 15px; overflow: hidden; }
+
+.impressions-carousel-img {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   display: block;
 }
 
-.impressions-nav-btn {
-  background: none;
-  border: none;
-  padding: 0;
+.impressions-ctrl {
+  width: auto;
   color: var(--rg-text-grey);
   opacity: 0.7;
   transition: opacity 0.2s;
-  line-height: 1;
+  padding: 0 4px;
 }
-
-.impressions-nav-btn:hover { opacity: 1; }
+.impressions-ctrl:hover { opacity: 1; color: var(--rg-text-grey); }
+.impressions-ctrl .carousel-control-prev-icon,
+.impressions-ctrl .carousel-control-next-icon { display: none; }
 
 @media (max-width: 767.98px) {
   .impressions-section { padding-top: 32px; padding-bottom: 48px; }

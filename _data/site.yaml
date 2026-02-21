@@ -15,9 +15,9 @@ nav:
   - id: disziplinen
     label: Disziplinen
     dropdown: true
-  - id: verein
-    label: Verein
-    href: "/#verein"
+#  - id: verein
+#    label: Verein
+#    href: "/#verein"
   - id: partner
     label: Partner
     href: "/#partner"
