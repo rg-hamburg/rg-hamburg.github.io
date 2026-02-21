@@ -1,0 +1,8 @@
+{
+    "yaml.schemas": {
+        "https://www.schemastore.org/jekyll.json": [
+            "file:///Users/torsten/Development/rg-hamburg/website/_data/site.yml",
+            "file:///Users/torsten/Development/rg-hamburg/website/_data/site.yaml"
+        ]
+    }
+}

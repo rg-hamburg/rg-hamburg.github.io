@@ -1,0 +1,83 @@
+# ---------------------------------------------------------------------
+title: RG Hamburg
+description: Radsport-Gemeinschaft Hamburg von 1893 e.V.
+instagram_url: "https://instagram.com/rg_hamburg"
+
+address:
+  name: Radsport-Gemeinschaft Hamburg von 1893 e.V.
+  street: Stormsweg 3
+  city: 22085 Hamburg
+
+nav:
+  - id: aktuelles
+    label: Aktuelles
+    href: "/#aktuelles"
+  - id: disziplinen
+    label: Disziplinen
+    href: "/disziplinen/bmx/"
+  - id: verein
+    label: Verein
+    href: "/#verein"
+  - id: partner
+    label: Partner
+    href: "/#partner"
+
+footer_links:
+  - label: Zeitmessung
+    href: "#"
+  - label: EasyVerein
+    href: "#"
+  - label: Kontakt
+    href: "#"
+  - label: Impressum
+    href: "/impressum/"
+  - label: Datenschutz
+    href: "/datenschutzerklaerung/"
+  - label: Mitgliedschaft
+    href: "/mitgliedschaft/"
+
+# ---------------------------------------------------------------------
+hero:
+  heading: "Ready to Race"
+  subheading: "Egal, ob entspannte Gruppenfahrten, rasante Straßenrennen oder BMX Rides. Wir machen dich startklar!"
+  cta_label: "Erfahre mehr"
+  cta_href: "#disziplinen"
+  slides:
+    - image: hero-road.png
+      alt: Radsport Hamburg
+      label: Rennsport
+    - image: hero-bmx.png
+      alt: BMX
+      label: BMX
+    - image: hero-gravel.png
+      alt: "Gravel & MTB"
+      label: "Gravel & MTB"
+
+# ---------------------------------------------------------------------
+disciplines:
+  - name: Rennsport
+    url: /disziplinen/rennsport/
+    image: discipline-rennsport.png
+    description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+    btn_label: Erfahre mehr
+  - name: BMX
+    url: /disziplinen/bmx/
+    image: discipline-bmx.png
+    description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+    btn_label: Erfahre mehr
+  - name: "Gravel & MTB"
+    url: /disziplinen/gravel/
+    image: discipline-gravel.png
+    description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+    btn_label: Erfahre mehr
+
+# ---------------------------------------------------------------------
+partners:
+  - name: Sparkasse Holstein
+    image: sponsor-sparkasse.png
+  - name: Active City Hamburg
+    image: sponsor-activecity.png
+  - name: MGF Gartenstadt Farmsen
+    image: sponsor-mgf.png
+  - name: Velux
+    image: sponsor-velux.png
