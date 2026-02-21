@@ -7,6 +7,14 @@ url: "https://rg-hamburg.github.io"
 markdown: kramdown
 permalink: pretty
 
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /aktuelles/:year/:slug/
+
 exclude:
   - Gemfile
   - Gemfile.lock

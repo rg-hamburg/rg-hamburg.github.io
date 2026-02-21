@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section class="page-hero">
+  <img src="{{ site.baseurl }}/assets/images/{{ page.hero_image }}"
+       class="page-hero-bg" alt="Aktuelles RG Hamburg">
+  <div class="page-hero-overlay"></div>
+  <div class="container h-100 position-relative">
+    <div class="page-hero-title-box">
+      <h1 class="page-hero-title">Aktuelles</h1>
+    </div>
+  </div>
+</section>
+
+{% include events.html %}
+
+{% include news.html %}

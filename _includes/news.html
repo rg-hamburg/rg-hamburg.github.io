@@ -3,23 +3,23 @@
     <div class="section-header mb-section-head">
       <div class="d-flex align-items-center">
         <span class="section-label">Aktuelles</span>
-        <a href="{{ site.data.news.show_all_href }}" class="section-link ms-auto">Alles anzeigen →</a>
+        <a href="/aktuelles/" class="section-link ms-auto">Alles anzeigen →</a>
       </div>
       <div class="section-line"></div>
     </div>
     <div class="row g-4">
-      {% for article in site.data.news.items %}
+      {% for post in site.posts %}
         <div class="col-12 col-sm-6 col-lg-3">
           <article class="news-card h-100 d-flex flex-column">
             <div class="news-img-wrap">
-              <img src="{{ site.baseurl }}/assets/images/{{ article.image }}" class="news-img" alt="{{ article.alt }}">
+              <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="news-img" alt="{{ post.alt }}">
             </div>
             <div class="news-body flex-grow-1 d-flex flex-column p-3">
-              <span class="news-date">{{ article.date }}</span>
+              <span class="news-date">{{ post.date | date: "%B, %Y" }}</span>
               <hr class="news-divider">
-              <h3 class="news-title">{{ article.title }}</h3>
-              <p class="news-text flex-grow-1">{{ article.excerpt }}</p>
-              <a href="{{ article.href }}" class="news-arrow mt-auto">→</a>
+              <h3 class="news-title">{{ post.title }}</h3>
+              <p class="news-text flex-grow-1">{{ post.excerpt }}</p>
+              <a href="{{ post.url }}" class="news-arrow mt-auto">→</a>
             </div>
           </article>
         </div>

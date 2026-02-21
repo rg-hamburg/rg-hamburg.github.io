@@ -941,3 +941,17 @@ body {
 @media (max-width: 767.98px) {
   .impressions-section { padding-top: 32px; padding-bottom: 48px; }
 }
+
+/* ============================================================
+   POST SINGLE PAGE
+============================================================ */
+.post-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--rg-text-grey);
+  margin-bottom: 32px;
+}
+
+@media (max-width: 767.98px) {
+  .post-title { font-size: 28px; }
+}

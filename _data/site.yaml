@@ -11,7 +11,7 @@ address:
 nav:
   - id: aktuelles
     label: Aktuelles
-    href: "/#aktuelles"
+    href: "/aktuelles/"
   - id: disziplinen
     label: Disziplinen
     dropdown: true
