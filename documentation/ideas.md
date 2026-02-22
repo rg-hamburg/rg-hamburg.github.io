@@ -2,7 +2,7 @@
 
 ## Inhalt
 
-- [ ] Posts von der alten Seite überführen
+- [x] Posts von der alten Seite überführen
 - [ ] Rennsport-Seite aufbauen
 - [ ] Gravel-Seite erst einmal deaktivieren
 
@@ -13,7 +13,8 @@
 
 ## Technisch
 
+- [ ] Link-Farbe
 - [ ] SEO Optimierung
 - [ ] gitHub action zum checken von linkstruktur
 - [ ] Insta-Account RG Hamburg
-- [ ] Ordnerstruktur (disziplinen weg)
+- [x] Ordnerstruktur (/disziplinen/ weg)

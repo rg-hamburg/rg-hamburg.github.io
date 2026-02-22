@@ -1030,6 +1030,16 @@ body {
 }
 
 /* ============================================================
+   PROSE IMAGES (inline images in markdown posts)
+============================================================ */
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* ============================================================
    PROSE TABLES (markdown-generated tables inside .prose)
 ============================================================ */
 .prose table {

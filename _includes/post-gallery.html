@@ -1,0 +1,15 @@
+{% if page.gallery %}
+<section class="py-section bg-white">
+  <div class="container" style="max-width: 900px;">
+    <div class="row g-3">
+      {% for img in page.gallery %}
+      <div class="col-6 col-md-4">
+        <img src="{{ site.baseurl }}/assets/images/{{ img.file }}"
+             alt="{{ img.alt }}"
+             class="img-fluid rounded shadow-sm">
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

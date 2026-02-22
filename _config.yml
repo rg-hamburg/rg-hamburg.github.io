@@ -16,9 +16,9 @@ defaults:
       permalink: /aktuelles/:year/:slug/
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - docker-compose.yml
+  - docker-compose.yaml
   - documentation/
   - README.md
-  - "*.fig"
+  - .github
+  - .claude
+  - .vscode
