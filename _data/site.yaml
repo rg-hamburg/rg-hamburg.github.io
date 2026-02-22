@@ -17,7 +17,7 @@ nav:
     dropdown: true
   - id: verein
     label: Verein
-    href: "/#verein"
+    href: "/verein/"
   - id: partner
     label: Partner
     href: "/#partner"
@@ -33,8 +33,7 @@ footer_links:
     href: "/impressum.html"
   - label: Datenschutz
     href: "/datenschutzerklaerung.html"
-  - label: Mitgliedschaft
-    href: "/mitgliedschaft.html"
+
 
 # ---------------------------------------------------------------------
 hero:
@@ -70,6 +69,27 @@ disciplines:
     image: discipline-gravel.png
     description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
     btn_label: Erfahre mehr
+
+# ---------------------------------------------------------------------
+verein:
+  vorstand:
+    - name: Homer Simpson
+      role: 1. Vorsitzender
+      email: homer@rg-hamburg.de
+    - name: Marge Simpson
+      role: 2. Vorsitzende
+      email: marge@rg-hamburg.de
+
+  spartenleitung:
+    - name: Lisa Simpson
+      role: Spartenleiterin Rennsport
+      email: lisa@rg-hamburg.de
+    - name: Bart Simpson
+      role: Spartenleiter BMX
+      email: bart@rg-hamburg.de
+    - name: Ned Flanders
+      role: Spartenleiter Gravel & MTB
+      email: ned@rg-hamburg.de
 
 # ---------------------------------------------------------------------
 partners:

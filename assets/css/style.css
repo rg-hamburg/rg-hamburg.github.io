@@ -681,6 +681,42 @@ body {
 }
 
 /* ============================================================
+   CLUB CONTACT CARDS (verein page)
+============================================================ */
+.club-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  overflow: hidden;
+}
+.club-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.club-card-name  { font-size: 1rem; font-weight: 700; color: var(--rg-dark); margin: 0 0 2px; }
+.club-card-role  { font-size: 0.875rem; color: var(--rg-text-grey); margin: 0 0 12px; }
+.club-card-email { font-size: 0.875rem; color: var(--rg-blue); text-decoration: none; }
+.club-card-email:hover { text-decoration: underline; }
+
+.verein-1893-card {
+  background-image: url('/assets/images/verein-1893.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+.verein-1893-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 8, 18, 0.45);
+}
+.verein-1893-card > * { position: relative; z-index: 1; }
+.verein-1893-card .badge { background: rgba(255,255,255,0.15) !important; color: #fff !important; }
+
+/* ============================================================
    RESPONSIVE BREAKPOINTS
 ============================================================ */
 

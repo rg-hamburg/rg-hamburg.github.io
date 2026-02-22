@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% assign v = site.data.site.verein %}
+
+<!-- ===== Über uns ===== -->
+<section class="py-section bg-rg-light">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-12 col-lg-7">
+        <div class="section-header mb-section-head">
+          <span class="section-label">Verein</span>
+          <div class="section-line"></div>
+        </div>
+        <h2 class="intro-heading">Radsport-Gemeinschaft Hamburg von 1893 e.V.</h2>
+        <p class="intro-text">{{ page.intro }}</p>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="contact-form-card verein-1893-card text-center">
+          <div style="font-size:60px;font-weight:700;line-height:1;">1893</div>
+          <div class="mb-4" style="font-size:14px;opacity:.75;margin-top:4px;">Gegründet in Hamburg</div>
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <span class="badge rounded-pill">Rennsport</span>
+            <span class="badge rounded-pill">BMX</span>
+            <span class="badge rounded-pill">Gravel & MTB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Fließtexte (Geschichte + Mitgliedschaft aus verein.md) ===== -->
+<section class="py-section bg-white">
+  <div class="container" style="max-width:800px;">
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+<!-- ===== Ansprechpartner ===== -->
+<section class="py-section bg-rg-light">
+  <div class="container">
+    <div class="section-header mb-section-head">
+      <span class="section-label">Ansprechpartner</span>
+      <div class="section-line"></div>
+    </div>
+
+    <h3 class="mb-4">Vorstand</h3>
+    <div class="row g-4 mb-5">
+      {% for person in v.vorstand %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="contact-form-card h-100 text-center">
+          <div class="club-avatar mx-auto">
+            <img src="https://api.dicebear.com/9.x/avataaars/svg?seed={{ person.name | url_encode }}" alt="{{ person.name }}">
+          </div>
+          <p class="club-card-name">{{ person.name }}</p>
+          <p class="club-card-role">{{ person.role }}</p>
+          <a href="mailto:{{ person.email }}" class="club-card-email">{{ person.email }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <h3 class="mb-4">Spartenleitung</h3>
+    <div class="row g-4">
+      {% for person in v.spartenleitung %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="contact-form-card h-100 text-center">
+          <div class="club-avatar mx-auto">
+            <img src="https://api.dicebear.com/9.x/avataaars/svg?seed={{ person.name | url_encode }}" alt="{{ person.name }}">
+          </div>
+          <p class="club-card-name">{{ person.name }}</p>
+          <p class="club-card-role">{{ person.role }}</p>
+          <a href="mailto:{{ person.email }}" class="club-card-email">{{ person.email }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include probetraining.html %}
