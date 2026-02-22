@@ -2,6 +2,7 @@
 layout: default
 title: "Gravel & MTB – RG Hamburg"
 active_nav: disziplinen
+permalink: /gravel/
 ---
 
 <section class="py-section bg-rg-light">

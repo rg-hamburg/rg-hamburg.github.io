@@ -2,6 +2,7 @@
 layout: prose
 title: "Satzung – RG Hamburg"
 section_label: Rechtliches
+permalink: /satzung.html
 ---
 
 ## Satzung

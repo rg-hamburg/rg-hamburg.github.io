@@ -578,6 +578,109 @@ body {
 .footer-nav a:hover { color: #fff; }
 
 /* ============================================================
+   PROBETRAINING PAGE — info + contact form
+============================================================ */
+.contact-info-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--rg-dark);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.contact-info-text {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.probetraining-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.probetraining-info-item:first-child { border-top: 1px solid rgba(0,0,0,0.08); }
+
+.probetraining-info-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--rg-gradient-yellow-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.probetraining-info-name {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--rg-dark);
+  line-height: 1.3;
+}
+
+.probetraining-info-detail {
+  display: block;
+  font-size: 14px;
+  color: var(--rg-text-grey);
+  margin-top: 2px;
+}
+
+.contact-form-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.contact-form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rg-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact-form-optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--rg-text-grey);
+}
+
+.contact-form-control {
+  border-radius: 8px !important;
+  border-color: #dce3e8 !important;
+  font-size: 15px !important;
+  padding: 10px 14px !important;
+  color: var(--rg-dark) !important;
+}
+
+.contact-form-control:focus {
+  border-color: var(--rg-blue) !important;
+  box-shadow: 0 0 0 3px rgba(0, 77, 255, 0.12) !important;
+}
+
+.contact-form-success {
+  align-items: center;
+  gap: 12px;
+  background: #eaf7ee;
+  border: 1px solid #7ed4a0;
+  border-radius: 10px;
+  color: #1a6635;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 24px;
+  margin-bottom: 0;
+}
+
+/* ============================================================
    RESPONSIVE BREAKPOINTS
 ============================================================ */
 

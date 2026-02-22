@@ -3,4 +3,14 @@ heading: "Mach den ersten Schritt und fahr bei uns mit."
 text: "Du liebst das Radfahren und willst wissen, wie echter Vereinsradsport aussieht? Dann steig bei unserem kostenlosen Schnuppertraining mit uns aufs Rad und erlebe Teamgeist und die Faszination des Radsports hautnah!"
 cta_label: "Jetzt mitfahren"
 cta_label_discipline: "Jetzt anmelden"
-cta_href: "#kontakt"
+cta_href: "/probetraining/"
+
+page_intro: "Schnuppere kostenlos in unsere Trainingswelt rein — wir melden uns innerhalb von 48 Stunden bei dir."
+
+disciplines_info:
+  - name: BMX
+    detail: "Mittwochs & freitags · Neusurenland 66, 22159 Hamburg"
+  - name: Rennsport
+    detail: "Dienstags & donnerstags · Velodrom Hamburg"
+  - name: Gravel
+    detail: "Samstags · Treffpunkt Stormsweg 3, 22085 Hamburg"

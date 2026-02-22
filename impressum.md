@@ -2,6 +2,7 @@
 layout: prose
 title: "Impressum – RG Hamburg"
 section_label: Rechtliches
+permalink: /impressum.html
 ---
 
 ## Impressum

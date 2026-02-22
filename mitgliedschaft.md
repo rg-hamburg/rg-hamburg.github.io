@@ -2,6 +2,7 @@
 layout: prose
 title: "Mitgliedschaft – RG Hamburg"
 section_label: Verein
+permalink: /mitgliedschaft.html
 ---
 
 ## Mitgliedschaft

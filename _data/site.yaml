@@ -15,9 +15,9 @@ nav:
   - id: disziplinen
     label: Disziplinen
     dropdown: true
-#  - id: verein
-#    label: Verein
-#    href: "/#verein"
+  - id: verein
+    label: Verein
+    href: "/#verein"
   - id: partner
     label: Partner
     href: "/#partner"
@@ -28,13 +28,13 @@ footer_links:
   - label: EasyVerein
     href: "#"
   - label: Kontakt
-    href: "#"
+    href: "/probetraining/"
   - label: Impressum
-    href: "/impressum/"
+    href: "/impressum.html"
   - label: Datenschutz
-    href: "/datenschutzerklaerung/"
+    href: "/datenschutzerklaerung.html"
   - label: Mitgliedschaft
-    href: "/mitgliedschaft/"
+    href: "/mitgliedschaft.html"
 
 # ---------------------------------------------------------------------
 hero:
@@ -56,17 +56,17 @@ hero:
 # ---------------------------------------------------------------------
 disciplines:
   - name: Rennsport
-    url: /disziplinen/rennsport/
+    url: /rennsport/
     image: discipline-rennsport.png
     description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
     btn_label: Erfahre mehr
   - name: BMX
-    url: /disziplinen/bmx/
+    url: /bmx/
     image: discipline-bmx.png
     description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
     btn_label: Erfahre mehr
   - name: "Gravel & MTB"
-    url: /disziplinen/gravel/
+    url: /gravel/
     image: discipline-gravel.png
     description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
     btn_label: Erfahre mehr

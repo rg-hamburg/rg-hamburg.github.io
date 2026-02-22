@@ -2,6 +2,7 @@
 layout: default
 title: "Rennsport – RG Hamburg"
 active_nav: disziplinen
+permalink: /rennsport/
 ---
 
 <section class="py-section bg-rg-light">

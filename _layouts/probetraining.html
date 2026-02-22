@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+{% assign pt = site.data.probetraining %}
+
+<section class="page-hero">
+  <img src="{{ site.baseurl }}/assets/images/{{ page.hero_image }}"
+       class="page-hero-bg" alt="Probetraining RG Hamburg">
+  <div class="page-hero-overlay"></div>
+  <div class="container h-100 position-relative">
+    <div class="page-hero-title-box">
+      <h1 class="page-hero-title">Probetraining</h1>
+    </div>
+  </div>
+</section>
+
+<section class="py-section bg-rg-light">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+
+      <!-- Left: Info -->
+      <div class="col-12 col-lg-6">
+        <div class="section-header mb-section-head">
+          <span class="section-label">Probetraining</span>
+          <div class="section-line"></div>
+        </div>
+        <h2 class="contact-info-heading">Komm einfach vorbei und fahr mit uns!</h2>
+        <p class="contact-info-text">{{ pt.page_intro }}</p>
+
+        <div class="contact-disciplines mt-4">
+          {% for item in pt.disciplines_info %}
+          <div class="probetraining-info-item">
+            <div class="probetraining-info-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="probetraining-info-name">{{ item.name }}</span>
+              <span class="probetraining-info-detail">{{ item.detail }}</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="col-12 col-lg-6">
+        <div class="contact-form-card">
+          <div id="contact-success" class="contact-form-success" style="display:none">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Danke! Wir melden uns innerhalb von 48 Stunden.
+          </div>
+          <form action="https://formspree.io/f/mzdajyja" method="POST" id="contact-form">
+            <input type="hidden" name="_next" value="/probetraining/?danke=1">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div class="mb-3">
+              <label for="contact-name" class="contact-form-label">Name *</label>
+              <input type="text" id="contact-name" name="Name" class="contact-form-control form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="contact-email" class="contact-form-label">E-Mail *</label>
+              <input type="email" id="contact-email" name="E-Mail" class="contact-form-control form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="contact-phone" class="contact-form-label">Telefon <span class="contact-form-optional">(optional)</span></label>
+              <input type="tel" id="contact-phone" name="Telefon" class="contact-form-control form-control">
+            </div>
+            <div class="mb-3">
+              <label for="contact-discipline" class="contact-form-label">Disziplin *</label>
+              <select id="contact-discipline" name="Disziplin" class="contact-form-control form-control form-select" required>
+                <option value="" disabled selected>Bitte wählen …</option>
+                {% for item in pt.disciplines_info %}
+                <option value="{{ item.name }}">{{ item.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="contact-message" class="contact-form-label">Nachricht <span class="contact-form-optional">(optional)</span></label>
+              <textarea id="contact-message" name="Nachricht" class="contact-form-control form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-rg-red w-100">Anfrage absenden</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+if (window.location.search.indexOf('danke=1') !== -1) {
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('contact-form');
+    var success = document.getElementById('contact-success');
+    if (form && success) {
+      form.style.display = 'none';
+      success.style.display = 'flex';
+    }
+  });
+}
+</script>

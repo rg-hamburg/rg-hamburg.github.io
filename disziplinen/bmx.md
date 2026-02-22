@@ -3,6 +3,7 @@ layout: discipline
 title: "BMX – RG Hamburg"
 data_key: bmx
 active_nav: disziplinen
+permalink: /bmx/
 instagram_url: "https://instagram.com/bmx_rghamburg"
 intro_image: discipline-bmx.png
 intro_image_alt: BMX Track RG Hamburg

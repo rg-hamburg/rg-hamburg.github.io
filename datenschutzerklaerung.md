@@ -2,6 +2,7 @@
 layout: prose
 title: "Datenschutzerklärung – RG Hamburg"
 section_label: Rechtliches
+permalink: /datenschutzerklaerung.html
 ---
 
 ## Datenschutzerklärung
