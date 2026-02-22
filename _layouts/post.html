@@ -15,19 +15,37 @@ layout: default
 </section>
 {% endif %}
 
-<section class="py-section bg-rg-light">
+<section class="bg-rg-light post-header-section">
   <div class="container" style="max-width: 800px;">
-    <div class="section-header mb-section-head">
-      <span class="section-label">{{ page.date | date: "%B %Y" }}</span>
-      <div class="section-line"></div>
-    </div>
-    <h2 class="post-title">{{ page.title }}</h2>
+    <h2 class="post-title mb-2">{{ page.title }}</h2>
+    {% assign de_months = "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember" | split: "," %}
+    {% assign m = page.date | date: "%-m" | minus: 1 %}
+    <p class="post-date">{{ page.date | date: "%-d" }}. {{ de_months[m] }} {{ page.date | date: "%Y" }}</p>
+  </div>
+</section>
+
+{% if page.gallery %}
+  {% assign _parts   = content | split: '</p>' %}
+  {% assign _excerpt = _parts[0] | append: '</p>' %}
+  {% assign _rest    = content | remove_first: _excerpt %}
+{% endif %}
+
+<section class="bg-rg-light post-prose-section{% if page.gallery %} post-prose-excerpt{% endif %}">
+  <div class="container" style="max-width: 800px;">
     <div class="prose">
-      {{ content }}
+      {% if page.gallery %}{{ _excerpt }}{% else %}{{ content }}{% endif %}
     </div>
   </div>
 </section>
 
 {% include post-gallery.html %}
+
+{% unless _rest == blank %}
+<section class="bg-rg-light post-prose-section">
+  <div class="container" style="max-width: 800px;">
+    <div class="prose">{{ _rest }}</div>
+  </div>
+</section>
+{% endunless %}
 
 {% include probetraining.html %}

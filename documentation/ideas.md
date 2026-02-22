@@ -7,6 +7,7 @@
 - [ ] Gravel-Seite erst einmal deaktivieren
 - [ ] Newsletter-Inhalte in Aktuelles integrieren
 - [ ] Aktuelles: Detailseite
+- [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
 
 ## Prozesse
 
@@ -15,6 +16,7 @@
 
 ## Technisch
 
+- [ ] Tags für Aktuelles? Filtermöglichkeit
 - [ ] Link-Farbe
 - [ ] SEO Optimierung
 - [ ] gitHub action zum checken von linkstruktur

@@ -1,15 +1,80 @@
 {% if page.gallery %}
-<section class="py-section bg-white">
-  <div class="container" style="max-width: 900px;">
-    <div class="row g-3">
-      {% for img in page.gallery %}
-      <div class="col-6 col-md-4">
-        <img src="{{ site.baseurl }}/assets/images/{{ img.file }}"
-             alt="{{ img.alt }}"
-             class="img-fluid rounded shadow-sm">
+<section class="bg-rg-light py-4">
+  <div class="container" style="max-width: 800px;">
+
+    <div id="postCarousel" class="carousel slide rounded overflow-hidden shadow-sm"
+         data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-indicators">
+        {% for img in page.gallery %}
+        <button type="button" data-bs-target="#postCarousel"
+                data-bs-slide-to="{{ forloop.index0 }}"
+                class="{% if forloop.first %}active{% endif %}"
+                aria-label="Bild {{ forloop.index }}"></button>
+        {% endfor %}
       </div>
-      {% endfor %}
+      <div class="carousel-inner post-carousel-inner">
+        {% for img in page.gallery %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <img src="{{ site.baseurl }}/assets/images/{{ img.file }}"
+               class="d-block w-100 post-carousel-img"
+               alt="{{ img.alt }}" style="cursor: zoom-in;">
+        </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button"
+              data-bs-target="#postCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Vorheriges Bild</span>
+      </button>
+      <button class="carousel-control-next" type="button"
+              data-bs-target="#postCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Nächstes Bild</span>
+      </button>
     </div>
+
+    <p id="postCaption" class="post-carousel-caption-ext mt-3 mb-0"></p>
+
   </div>
 </section>
+
+<div class="modal fade" id="postLightbox" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0 shadow-none">
+      <div class="modal-body p-0 text-center">
+        <div class="post-lightbox-frame d-inline-block position-relative">
+          <button type="button" class="post-lightbox-close"
+                  data-bs-dismiss="modal" aria-label="Schließen">✕</button>
+          <img id="postLightboxImg" src="" alt="" class="post-lightbox-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var carousel = document.getElementById('postCarousel');
+  var caption  = document.getElementById('postCaption');
+  var lbImg    = document.getElementById('postLightboxImg');
+
+  function slideAlt(idx) {
+    return carousel.querySelectorAll('.post-carousel-img')[idx].alt;
+  }
+
+  caption.textContent = slideAlt(0);
+
+  carousel.addEventListener('slide.bs.carousel', function (e) {
+    caption.textContent = slideAlt(e.to);
+  });
+
+  carousel.querySelectorAll('.post-carousel-img').forEach(function (img) {
+    img.addEventListener('click', function () {
+      lbImg.src = this.src;
+      lbImg.alt = this.alt;
+      bootstrap.Modal.getOrCreateInstance(document.getElementById('postLightbox')).show();
+    });
+  });
+});
+</script>
 {% endif %}

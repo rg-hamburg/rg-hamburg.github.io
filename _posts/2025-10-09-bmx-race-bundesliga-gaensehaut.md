@@ -24,14 +24,11 @@ gallery:
     alt: Siegerehrung BMX Bundesliga Hamburg
 ---
 
-Am 20. und 21. September bebte der BMX-Race Track Neusurenland, als die BMX Race Bundesliga Station in Hamburg machte.
-
-Über 230 Starterinnen und Starter traten an beiden Tagen auf dem rund 350 Meter langen Kurs an — mit packenden Rennen, engen Sprints und atemberaubenden Überholmanövern, die die täglich rund 250 Zuschauer begeisterten.
+Am 20. und 21. September bebte der BMX-Race Track Neusurenland, als die BMX Race Bundesliga Station in Hamburg machte. Über 230 Starterinnen und Starter traten an beiden Tagen auf dem rund 350 Meter langen Kurs an — mit packenden Rennen, engen Sprints und atemberaubenden Überholmanövern, die die täglich rund 250 Zuschauer begeisterten.
 
 Die Atmosphäre war an beiden Tagen festival-artig, mit lautstarker Unterstützung aus dem Publikum. Rund 100 Camperinnen und Camper übernachteten am Track; 50 bis 60 Helferinnen und Helfer sorgten für einen reibungslosen Ablauf bei Rennen, Verpflegung und Logistik.
 
 Ein besonderer Moment war die Einweihung der **„Wolfgang Strohband — Weitsichtbank"** zu Ehren des verstorbenen BMX-Track-Gründers und langjährigen RG-Hamburg-Vorsitzenden. Sie würdigt seinen unermüdlichen Einsatz für unsere Anlage.
-
 Philip Werner, Spartenleiter BMX der RG Hamburg, zog ein rundum positives Fazit: Das Wochenende war ein voller Erfolg.
 
 Fotos: Oxana Fotografie & Kai Westphal.
