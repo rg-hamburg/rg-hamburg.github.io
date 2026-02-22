@@ -1141,7 +1141,7 @@ body {
 ============================================================ */
 .post-carousel-inner             { aspect-ratio: 16 / 9; }
 .post-carousel-inner .carousel-item { height: 100%; }
-.post-carousel-img               { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.post-carousel-img               { width: 100%; height: 100%; object-fit: cover; object-position: top; }
 .post-carousel-caption-ext       { color: var(--rg-text-grey); font-size: 0.875rem; font-style: italic; text-align: center; }
 
 /* ============================================================
