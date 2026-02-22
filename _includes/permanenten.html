@@ -1,0 +1,35 @@
+{% assign d = include.data %}
+{% if d.permanenten %}
+<section class="py-section bg-rg-light">
+  <div class="container">
+
+    <div class="section-header mb-section-head">
+      <span class="section-label">Permanente Strecken</span>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="text-muted mb-4">Unsere Permanenten können ganzjährig und individuell gefahren werden — täglich zwischen 8 und 20 Uhr. Startbogen (3 €) an der jeweiligen Starttankstelle.</p>
+
+    <div class="row g-4">
+      {% for route in d.permanenten %}
+      <div class="col-md-4">
+        <div class="card h-100 border-0 rounded-3 shadow-sm">
+          <div class="card-body p-4">
+            <h5 class="fw-semibold mb-2">{{ route.name }}</h5>
+            <p class="text-muted mb-3">{{ route.description }}</p>
+            {% if route.tags %}
+            <div class="d-flex flex-wrap gap-2">
+              {% for tag in route.tags %}
+              <span class="badge rounded-pill bg-rg-light border" style="color: var(--rg-text-grey);">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+{% endif %}

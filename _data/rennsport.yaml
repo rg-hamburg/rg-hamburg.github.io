@@ -1,0 +1,46 @@
+hero_image: hero-road.png
+hero_title: Rennsport
+
+section_label: Disziplinen
+
+faq:
+  - question: "Was ist Straßenrennsport?"
+    answer: "Straßenrennsport ist Wettkampfsport auf der Straße — von lokalen Hobbyrennen bis zu nationalen Meisterschaften. Im Mittelpunkt stehen Ausdauer, Kraft und taktisches Fahren im Feld. Unser Team aus Lizenzfahrern und ambitionierten Hobbyathleten trainiert gemeinsam unter erfahrenem Coaching."
+  - question: "Was ist RTF – Radtourenfahren?"
+    answer: "RTF steht für Radtourenfahren und ist die sportliche Variante des Radwanderns: ausgeschilderte Strecken, definierte Distanzen (40–150 km, Marathonstrecken über 200 km) — aber kein Rennen. Es gilt die Straßenverkehrsordnung, Helm ist Pflicht. Ideal für alle, die strukturiert und gemeinsam fahren wollen, ohne Renndruck."
+  - question: "Wer kann mitmachen?"
+    answer: "Rennsport und RTF sind offen für alle, die Lust aufs Fahren haben — vom Wiedereinsteiger bis zum Lizenzrennfahrer. Einfach Kontakt aufnehmen oder beim Probetraining vorbeikommen."
+  - question: "Was sind Permanente Strecken?"
+    answer: "Permanente sind selbstorganisierte Touren, die das ganze Jahr über individuell gestartet werden können — kein Veranstaltungstermin, kein Startfeld. Start ist täglich zwischen 8 und 20 Uhr an der jeweiligen Tankstelle. Ein Startbogen kostet 3 €; unterwegs werden Kontrollaufgaben gelöst, die Wertungspunkte auf der BDR-Karte ergeben."
+  - question: "Wie verdiene ich RTF-Wertungspunkte?"
+    answer: "An Veranstaltungen und Permanenten werden Startbögen ausgestellt und Stempelstellen auf der Strecke angefahren. Die gesammelten Stempel ergeben Wertungspunkte für die Jahreswertung des BDR (Bund Deutscher Radfahrer e.V.)."
+
+training:
+  label: Offene Trainingsgruppen
+  rows:
+    - day: Donnerstag
+      time: "April – September"
+      group: "Duvenstedt-Gruppe · 64–78 km · Ø 26–29 km/h"
+      trainer: "Duvenstedter Eiscafe, Poppenbüttler Chaussee 8"
+    - day: Freitag
+      time: "18:00 · April – September"
+      group: "Volksdorf-Gruppe · ca. 72 km · Ø 27–28 km/h"
+      trainer: "Sportkopf Helme & Brillen, Weiße Rose 3, Volksdorf"
+  footnote: 'Helm ist Pflicht. Bitte zwei Ersatzschläuche, Pumpe und bei Dämmerung Beleuchtung mitbringen. Bei schlechtem Wetter entfällt das Training — Ankündigung mindestens eine Stunde vor Start. Aktuelle Infos: Strava-Gruppe "Club Duvenstedt" (Do) und "RG-Hamburg-Rennradtraining-Volksdorf" (Fr).'
+
+permanenten:
+  - name: "Stormarn Permanente"
+    description: "Eine abwechslungsreiche Tour durch das hügelige Stormarn — vorbei an Fürstenkaten, einem der höchsten Punkte Südstormarns, und mit der Schüberg-Steigung (62,7 m) kurz vor dem Ziel. Idyllische Abschnitte wechseln sich mit kleinen Anstiegen ab."
+    tags:
+      - Hügelig
+      - Stormarn
+  - name: "Zur Alsterquelle"
+    description: "Entlang der Alster bis zu ihrer Quelle — kurvenreich, abwechslungsreich und gut mit GPS zu navigieren. Eine der beliebtesten Touren für alle, die Hamburg vom Fluss aus entdecken wollen."
+    tags:
+      - Flussroute
+      - Alster
+  - name: "Zur Schleusenbrücke"
+    description: "Das grüne Vierlanden vor der Haustür: Diese Tour führt durch Hamburg und berührt kurz Schleswig-Holstein und Niedersachsen. Wer möchte, bleibt südlich der Elbe, fährt auf dem Deich westlich bis Hoopte und nimmt die Fähre zurück."
+    tags:
+      - Vierlanden
+      - Optionale Fähre

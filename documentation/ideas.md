@@ -2,12 +2,14 @@
 
 ## Inhalt
 
-- [ ] Rennsport-Seite aufbauen
-- [ ] Gravel-Seite erst einmal deaktivieren
+- [ ] BMX-Inhalte überarbeiten
+- [ ] Gravel-Seite erst einmal deaktivieren?
 - [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
+- [x] Rennsport-Seite aufbauen
 - [x] Newsletter-Inhalte in Aktuelles integrieren
 - [x] Aktuelles: Detailseite
 - [x] Posts von der alten Seite überführen
+
 
 ## Prozesse
 
