@@ -3,6 +3,17 @@ title: "40. Großer Preis von Volksdorf"
 date: 2025-09-23
 image: news/Rennen1.jpeg
 alt: "Radrennen beim 40. Großen Preis von Volksdorf"
+gallery:
+  - file: news/Rennen2.jpeg
+    alt: "40. Großer Preis von Volksdorf — Renngeschehen"
+  - file: news/Rennen3.jpeg
+    alt: "40. Großer Preis von Volksdorf — Renngeschehen"
+  - file: news/Siegerehrung_Frauen_Elite.jpeg
+    alt: "Lina Rausch (Kieler RV von 1961), Kathrin Billerbeck (FC St. Pauli), Lena Marie Krohn (RV Komet Delia 09 Köln)"
+  - file: news/Siegerehrung_Maenner_Elite.jpeg
+    alt: "Sebastian Niehues (RSV Münster v. 1895), Nicolas Zippan (Team Standert Brandenburg), Luca Bockelmann (Siena Garden Racing)"
+  - file: news/Siegerehrung_Masters3_Maenner.jpeg
+    alt: "Behnke Timo (RG Hamburg), Renzo Wernicke (Team Marx Städter-Bikescheune), Christian Hamburg (VonHacht-Masters)"
 ---
 
 Am 7. September 2025 fand der **40. Große Preis von Volksdorf** statt — ein Jubiläumsrennen durch den Volksdorfer Ortskern, das rund 250 nationale und internationale Radfahrerinnen und Radfahrer auf einem Ein-Kilometer-Kurs zusammenbrachte. Etwa 1.000 Zuschauer verfolgten das Geschehen bei bestem Wetter.

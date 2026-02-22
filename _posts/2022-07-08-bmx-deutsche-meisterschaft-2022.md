@@ -3,6 +3,15 @@ title: "BMX Deutsche Meisterschaft und Deutschland Cup 2022"
 date: 2022-07-08
 image: news/Picture4-1.jpg
 alt: "RG Hamburg beim BMX Deutsche Meisterschaft in Esselbach"
+gallery:
+  - file: news/Picture1-1.jpg
+    alt: "Mathis König auf Platz 3"
+  - file: news/Picture2-1.jpg
+    alt: "Die RG Hamburg"
+  - file: news/Picture3-1.jpg
+    alt: "Die RG-Hamburg"
+  - file: news/Picture5-1.jpg
+    alt: "Marc Teichmann auf Platz 2"
 ---
 
 Am 2. und 3. Juli 2022 reisten 12 Fahrerinnen und Fahrer der RG Hamburg zur **Deutschen Meisterschaft** und zum **Deutschland Cup** nach Esselbach in Bayern — bei bestem Sommerwetter.

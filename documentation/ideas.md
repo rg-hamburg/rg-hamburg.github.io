@@ -6,7 +6,7 @@
 - [ ] Rennsport-Seite aufbauen
 - [ ] Gravel-Seite erst einmal deaktivieren
 - [ ] Newsletter-Inhalte in Aktuelles integrieren
-- [ ] Aktuelles: Detailseite
+- [x] Aktuelles: Detailseite
 - [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
 
 ## Prozesse

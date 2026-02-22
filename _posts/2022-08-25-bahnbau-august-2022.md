@@ -3,6 +3,29 @@ title: "Bahnbau 19.–21. August 2022"
 date: 2022-08-25
 image: news/IMG_7774.jpg
 alt: "Freiwillige beim Bahnbau am BMX-Track August 2022"
+gallery:
+  - file: news/IMG_7781.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7779.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7772.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7771.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7764.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7760.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7759.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7758.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7754.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7750.jpg
+    alt: "Bahnbau 19.–21. August 2022"
+  - file: news/IMG_7749.jpg
+    alt: "Bahnbau 19.–21. August 2022"
 ---
 
 Es geht voran! Am Wochenende vom 19. bis 21. August waren wieder fleißige Hände am Arbeiten auf der BMX-Bahn. So einige Steine und Schubkarren Sand wurden bewegt.

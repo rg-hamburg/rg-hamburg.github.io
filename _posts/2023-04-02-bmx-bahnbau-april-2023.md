@@ -3,6 +3,19 @@ title: "BMX Bahnbau am 01. und 02.04.2023"
 date: 2023-04-02
 image: news/IMG_9019.jpg
 alt: "Freiwillige beim BMX Bahnbau April 2023"
+gallery:
+  - file: news/IMG_9021-rotated.jpg
+    alt: "BMX Bahnbau April 2023"
+  - file: news/IMG_9017.jpg
+    alt: "BMX Bahnbau April 2023"
+  - file: news/IMG_9016.jpg
+    alt: "BMX Bahnbau April 2023"
+  - file: news/IMG_9008.jpg
+    alt: "BMX Bahnbau April 2023"
+  - file: news/IMG_9024.jpg
+    alt: "BMX Bahnbau April 2023"
+  - file: news/IMG_9004-rotated.jpg
+    alt: "BMX Bahnbau April 2023"
 ---
 
 Dieses Wochenende wurde der Winter aus der BMX-Bahn gekehrt — gewalzt und druckgespült. Dank zahlreicher Helferinnen und Helfer ist die endlose To-do-Liste ein gutes Stück kürzer geworden.

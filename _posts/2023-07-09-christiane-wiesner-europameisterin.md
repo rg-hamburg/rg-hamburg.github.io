@@ -3,6 +3,11 @@ title: "Christiane Wiesner ist Europameisterin!"
 date: 2023-07-09
 image: news/Chrissi_Wiesner_.jpg
 alt: "Christiane Wiesner — Europameisterin BMX Cruiser Women 40+"
+gallery:
+  - file: news/Chrissi_Wiesner2_.jpg
+    alt: "Zufriedenes Gesicht bei der Zieleinfahrt"
+  - file: news/Chrissi_Wiesner3_.jpg
+    alt: "Zufriedene Gesichter. Die Siegerinnen der Europameisterschaft."
 ---
 
 Herzlichen Glückwunsch, Chrissy! 🎉

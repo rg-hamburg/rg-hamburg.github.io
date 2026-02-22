@@ -3,6 +3,17 @@ title: "38. Großer Preis von Volksdorf"
 date: 2023-09-12
 image: news/Siegerehrung_38GP_Hauptrennen_Elite.jpg
 alt: "Siegerehrung 38. Großer Preis von Volksdorf"
+gallery:
+  - file: news/Bild1_Radrennnen.jpg
+    alt: "38. Großer Preis von Volksdorf — Renngeschehen"
+  - file: news/Bild2_Radrennnen.jpg
+    alt: "38. Großer Preis von Volksdorf — Renngeschehen"
+  - file: news/Bild3_Radrennnen.jpg
+    alt: "38. Großer Preis von Volksdorf — Renngeschehen"
+  - file: news/Bild4_Radrennnen.jpg
+    alt: "38. Großer Preis von Volksdorf — Renngeschehen"
+  - file: news/38GP_Siegerehrung_Masters3.jpg
+    alt: "Christian Hamburg (RG Hamburg), Matthias Sterly (RC Bergedorf), Ralf Schöllhammer (VC Vegesack)"
 ---
 
 Am 3. September fand der **38. Große Preis von Volksdorf** im Rahmen des Volksdorfer Stadtteilfests statt — mit über 200 nationalen und internationalen Radfahrenden auf dem Ein-Kilometer-Kurs. Das Rennen geht auf die Gründung durch Wolfgang Strohband im Jahr 1983 zurück.

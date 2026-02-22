@@ -3,6 +3,15 @@ title: "Der Große Preis von Volksdorf am 7. September 2025"
 date: 2025-07-27
 image: news/GPVolksdorf_Bild2_.jpg
 alt: "Großer Preis von Volksdorf — 40. Jubiläum"
+gallery:
+  - file: news/GPVolksdorf_Bild1_.jpg
+    alt: "Großer Preis von Volksdorf 2025 — Impressionen"
+  - file: news/GPVolksdorf_Bild3_.jpg
+    alt: "Großer Preis von Volksdorf 2025 — Impressionen"
+  - file: news/GPVolksdorf_Bild4_.jpg
+    alt: "Großer Preis von Volksdorf 2025 — Impressionen"
+  - file: news/GPVolksdorf_Bild5_.jpg
+    alt: "Großer Preis von Volksdorf 2025 — Impressionen"
 ---
 
 Großes Radsport-Jubiläum in Volksdorf: Der **Große Preis von Volksdorf** macht die **40 Jahre** voll! Am 7. September 2025 dreht sich auf dem bewährten Ein-Kilometer-Kurs durch den Volksdorfer Ortskern wieder alles ums Rad.

@@ -3,6 +3,17 @@ title: "BMX Bundesliga Läufe 3. und 4. in Bispingen"
 date: 2022-06-21
 image: news/Podest-1.jpg
 alt: "RG Hamburg auf dem Podest beim BMX Bundesliga in Bispingen"
+gallery:
+  - file: news/Podest-2.jpg
+    alt: "Ferenz Isenbürger auf Platz 3"
+  - file: news/Podest-3.jpg
+    alt: "Louis Romeyke-Schlapper auf Platz 1"
+  - file: news/Podest-4.jpg
+    alt: "Kilian Schlapper auf Platz 2 und Ben Rieckenberg auf Platz 3"
+  - file: news/Podest-5.jpg
+    alt: "Chrissy Wiesner auf Platz 1 und Judith Tauber auf Platz 2"
+  - file: news/Podest-6.jpg
+    alt: "Mark Teichmann auf Platz 3"
 ---
 
 Am **18. und 19. Juni 2022** fanden in Bispingen die Bundesliga-Läufe 3 und 4 statt — mit starken Ergebnissen für die RG Hamburg.

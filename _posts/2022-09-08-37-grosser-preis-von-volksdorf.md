@@ -3,6 +3,13 @@ title: "37. Großer Preis von Volksdorf — Wolfgang Strohband Gedenkrennen"
 date: 2022-09-08
 image: news/Radrennen_Bild1.jpg
 alt: "37. Großer Preis von Volksdorf 2022"
+gallery:
+  - file: news/Bild_Siegerehrung_Masters.jpg
+    alt: "Christian Hamburg (RG Hamburg 1893), Matthias Sterly (RC Bergedorf 1988), Jens Boriczka (PSV Schwerin) – v.l.n.r."
+  - file: news/Bild_Siegerehrung_Hauptrennen_Elite.jpg
+    alt: "Niklas Behrens (Stevens Racing Team), Moritz Thömen (Bike Market Team), Leon Rohde (Rad – Net Rose Team) – v.l.n.r."
+  - file: news/Radrennen_Bild2.jpg
+    alt: "Das Teilnehmerfeld"
 ---
 
 Am 4. September 2022 kehrte der **Große Preis von Volksdorf** nach zwei Jahren Pause zurück — als Fest für den Radsport in Hamburg und als Gedenkrennen für **Wolfgang Strohband**, der das Rennen 1983 gegründet hatte und 2021 im Alter von 83 Jahren verstorben war.
