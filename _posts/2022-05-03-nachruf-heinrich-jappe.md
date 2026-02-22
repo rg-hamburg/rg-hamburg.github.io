@@ -1,6 +1,7 @@
 ---
 title: "Nachruf für unser Vereinsmitglied Heinrich Jappe"
 date: 2022-05-03
+tag: verein
 ---
 
 Die RG Hamburg trauert um **Heinrich Jappe**, geboren am 10. Januar 1945, gestorben am 13. Februar 2022.

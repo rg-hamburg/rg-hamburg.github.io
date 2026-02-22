@@ -1,6 +1,7 @@
 ---
 title: "Das Schnuppertraining 2023 startet am 06.04.2023"
 date: 2023-03-22
+tag: bmx
 ---
 
 Das Schnuppertraining 2023 startet am **6. April 2023** und endet zu den Herbstferien am **12. Oktober 2023**. In den Hamburger Schulferien wird kein Training angeboten.

@@ -3,6 +3,7 @@ title: "Spektakuläres BMX Race: Hitze, Stürze, zweimal EM-Halbfinale!"
 date: 2023-07-17
 image: news/kilian-kurve.jpg
 alt: "Kilian Schlapper in der Kurve beim EM-Halbfinale BMX"
+tag: bmx
 ---
 
 Louis (14) und Kilian Schlapper (11) aus Norderstedt bewiesen bei der **Europameisterschaft BMX Race** in Besançon, Frankreich kühlen Kopf — trotz extremer Hitze und Stürzen auf dem Kurs. Beide erreichten das Halbfinale in dieser schnellen olympischen Disziplin, verpassten den Finaleinzug aber knapp.

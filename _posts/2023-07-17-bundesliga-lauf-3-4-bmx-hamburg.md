@@ -3,6 +3,7 @@ title: "Bundesliga Lauf 3/4 BMX Race Track RG-Hamburg"
 date: 2023-07-17
 image: news/Buli-Joshua.png
 alt: "BMX Bundesliga am Race Track RG Hamburg"
+tag: bmx
 ---
 
 Die RG Hamburg lädt herzlich zu den **Bundesliga-Läufen 3 und 4** am BMX Race Track Neusurenland ein.

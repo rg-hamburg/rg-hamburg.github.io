@@ -26,6 +26,7 @@ gallery:
     alt: "Bahnbau 19.–21. August 2022"
   - file: news/IMG_7749.jpg
     alt: "Bahnbau 19.–21. August 2022"
+tag: bmx
 ---
 
 Es geht voran! Am Wochenende vom 19. bis 21. August waren wieder fleißige Hände am Arbeiten auf der BMX-Bahn. So einige Steine und Schubkarren Sand wurden bewegt.

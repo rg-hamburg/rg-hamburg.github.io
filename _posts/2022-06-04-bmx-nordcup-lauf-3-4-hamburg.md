@@ -12,6 +12,7 @@ gallery:
     alt: "Joshua Stürmer"
   - file: news/DSC_1070-scaled.jpg
     alt: "Momme Swanson"
+tag: bmx
 ---
 
 Die RG Hamburg richtete am **28. und 29. Mai 2022** die Nordcup-Läufe 3 und 4 aus — mit wechselhaftem Wetter, aber starken Leistungen der Hamburger Fahrerinnen und Fahrer.

@@ -10,6 +10,7 @@ gallery:
     alt: "39. Großer Preis von Volksdorf — Impressionen"
   - file: news/Bild4.jpg
     alt: "39. Großer Preis von Volksdorf — Impressionen"
+tag: rennsport
 ---
 
 Am **1. September 2024** ist es wieder so weit: Der **39. Große Preis von Volksdorf** verwandelt den Volksdorfer Ortskern in eine pulsierende Rennstrecke — zum 39. Mal im Rahmen des Volksdorfer Stadtteilfestes.

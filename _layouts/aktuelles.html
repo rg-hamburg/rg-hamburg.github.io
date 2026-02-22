@@ -22,28 +22,30 @@ layout: default
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var PAGE1 = 4, PAGEN = 8;
-  var cards = Array.from(document.querySelectorAll('[data-post-idx]'));
+  var allCards      = Array.from(document.querySelectorAll('[data-post-idx]'));
   var eventsSection = document.getElementById('veranstaltungen');
-  var pager = document.getElementById('aktuelles-pagination');
-  if (cards.length <= PAGE1) return;
+  var pager         = document.getElementById('aktuelles-pagination');
+  var filterBtns    = Array.from(document.querySelectorAll('[data-filter-tag]'));
+  var activeTag     = null;
+  var page          = 1;
 
-  var total = cards.length;
-  var totalPages = 1 + Math.ceil((total - PAGE1) / PAGEN);
-  var page = 1;
+  var total      = allCards.length;
+  var totalPages = total <= PAGE1 ? 1 : 1 + Math.ceil((total - PAGE1) / PAGEN);
 
   function show(p) {
+    if (activeTag !== null) return;
     page = p;
     if (p === 1) {
-      eventsSection.style.display = '';
-      cards.forEach(function (c, i) { c.style.display = i < PAGE1 ? '' : 'none'; });
+      if (eventsSection) eventsSection.style.display = '';
+      allCards.forEach(function (c, i) { c.style.display = i < PAGE1 ? '' : 'none'; });
     } else {
-      eventsSection.style.display = 'none';
+      if (eventsSection) eventsSection.style.display = 'none';
       var start = PAGE1 + (p - 2) * PAGEN;
-      cards.forEach(function (c, i) {
+      allCards.forEach(function (c, i) {
         c.style.display = (i >= start && i < start + PAGEN) ? '' : 'none';
       });
     }
-    render();
+    renderPager();
     window.scrollTo({ top: 0, behavior: 'smooth' });
     var url = p === 1 ? location.pathname : location.pathname + '?page=' + p;
     history.pushState({ page: p }, '', url);
@@ -57,7 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
     return el;
   }
 
-  function render() {
+  function renderPager() {
+    if (totalPages <= 1) { pager.style.display = 'none'; return; }
     pager.style.display = 'flex';
     pager.innerHTML = '';
     if (page > 1) pager.appendChild(mkBtn('← Neuere', page - 1));
@@ -68,13 +71,41 @@ document.addEventListener('DOMContentLoaded', function () {
     if (page < totalPages) pager.appendChild(mkBtn('Ältere →', page + 1));
   }
 
+  function applyFilter(tag) {
+    activeTag = tag || null;
+    filterBtns.forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.filterTag === (tag || ''));
+    });
+    if (activeTag) {
+      if (eventsSection) eventsSection.style.display = 'none';
+      pager.style.display = 'none';
+      allCards.forEach(function (c) {
+        c.style.display = (c.dataset.tag === activeTag) ? '' : 'none';
+      });
+    } else {
+      show(1);
+    }
+  }
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyFilter(btn.dataset.filterTag);
+    });
+  });
+
   var initPage = parseInt(new URLSearchParams(location.search).get('page')) || 1;
   initPage = Math.min(Math.max(initPage, 1), totalPages);
   history.replaceState({ page: initPage }, '', location.href);
   show(initPage);
 
   window.addEventListener('popstate', function (e) {
-    if (e.state && e.state.page) show(e.state.page);
+    if (e.state && e.state.page) {
+      activeTag = null;
+      filterBtns.forEach(function (btn) {
+        btn.classList.toggle('active', btn.dataset.filterTag === '');
+      });
+      show(e.state.page);
+    }
   });
 });
 </script>

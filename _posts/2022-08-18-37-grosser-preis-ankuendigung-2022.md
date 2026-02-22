@@ -3,6 +3,7 @@ title: "37. Großer Preis von Hamburg Volksdorf am 04.09.2022"
 date: 2022-08-18
 image: news/VolksdorfDanielChristian.jpg
 alt: "Großer Preis von Volksdorf — Radrennen im Volksdorfer Ortskern"
+tag: rennsport
 ---
 
 Am **Sonntag, 4. September 2022** findet der **37. Große Preis von Volksdorf** statt. Über 200 Radsportlerinnen und Radsportler werden auf dem Ein-Kilometer-Hochgeschwindigkeitskurs durch Volksdorf erwartet.

@@ -14,6 +14,7 @@ gallery:
     alt: "Mathis König auf Platz 1"
   - file: news/Picture6.jpg
     alt: "Die RG-Hamburg Fahrer"
+tag: bmx
 ---
 
 Am 26. Juni 2022 gastierte der **5. Nordcup-Lauf** beim Vegesacker BMX-Club in Bremen — mehrere Hamburgerinnen und Hamburger holten den ersten Platz!

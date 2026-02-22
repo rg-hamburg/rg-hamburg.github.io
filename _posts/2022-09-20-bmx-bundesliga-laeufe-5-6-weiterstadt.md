@@ -14,6 +14,7 @@ gallery:
     alt: "Mathis König"
   - file: news/image1-rotated.jpeg
     alt: "Leider spielte das Wetter nicht mit – die Kinder hat es gefreut"
+tag: bmx
 ---
 
 Die Bundesliga-Läufe 5 und 6 fanden am **17. und 18. September 2022** in Weiterstadt statt — trotz frischer Temperaturen und rauem Wetter packten die Hamburgerinnen und Hamburger stark an.

@@ -14,6 +14,7 @@ gallery:
     alt: "Gravel Ride mit der RG Hamburg"
   - file: news/IMG_3299_.jpg
     alt: "Gravel Ride mit der RG Hamburg"
+tag: gravel
 ---
 
 Die Gravel Rides der RG Hamburg sind ein voller Erfolg: Vier Ausfahrten haben bereits stattgefunden, mit jeweils 25 bis 40 Teilnehmerinnen und Teilnehmern. Bei jedem Wetter erkundeten die Gruppen die abwechslungsreichen Landschaften rund um Hamburg — sonntagsauf unterschiedlichen Routen, mit getrennten Gruppen für Einsteiger und Erfahrene.

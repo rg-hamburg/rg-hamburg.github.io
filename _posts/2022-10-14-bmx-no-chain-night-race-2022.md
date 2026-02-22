@@ -3,6 +3,7 @@ title: "BMX No-Chain Night Race am 19.11.2022"
 date: 2022-10-14
 image: news/RGH-Flyer-Nightrace-2022-small.png
 alt: "BMX No-Chain Night Race 2022 — 40 Jahre BMX in der RG Hamburg"
+tag: bmx
 ---
 
 Die RG Hamburg feiert **40 Jahre BMX** mit einem besonderen Rennen: dem **No-Chain Night Race** am 19. November 2022!

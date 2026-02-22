@@ -10,6 +10,7 @@ gallery:
     alt: "Niklas Behrens (Stevens Racing Team), Moritz Thömen (Bike Market Team), Leon Rohde (Rad – Net Rose Team) – v.l.n.r."
   - file: news/Radrennen_Bild2.jpg
     alt: "Das Teilnehmerfeld"
+tag: rennsport
 ---
 
 Am 4. September 2022 kehrte der **Große Preis von Volksdorf** nach zwei Jahren Pause zurück — als Fest für den Radsport in Hamburg und als Gedenkrennen für **Wolfgang Strohband**, der das Rennen 1983 gegründet hatte und 2021 im Alter von 83 Jahren verstorben war.

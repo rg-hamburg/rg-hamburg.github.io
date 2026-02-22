@@ -22,6 +22,7 @@ gallery:
     alt: Siegerehrung BMX Bundesliga Hamburg
   - file: news/Siegerehrung_4.jpg
     alt: Siegerehrung BMX Bundesliga Hamburg
+tag: bmx
 ---
 
 Am 20. und 21. September bebte der BMX-Race Track Neusurenland, als die BMX Race Bundesliga Station in Hamburg machte. Über 230 Starterinnen und Starter traten an beiden Tagen auf dem rund 350 Meter langen Kurs an — mit packenden Rennen, engen Sprints und atemberaubenden Überholmanövern, die die täglich rund 250 Zuschauer begeisterten.

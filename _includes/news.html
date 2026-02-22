@@ -9,6 +9,15 @@
       </div>
       <div class="section-line"></div>
     </div>
+    {% if page.layout == "aktuelles" %}
+    <div class="tag-filter">
+      <button class="tag-filter-btn alle active" data-filter-tag="">Alle</button>
+      <button class="tag-filter-btn bmx"        data-filter-tag="bmx">BMX</button>
+      <button class="tag-filter-btn rennsport"  data-filter-tag="rennsport">Rennsport</button>
+      <button class="tag-filter-btn gravel"     data-filter-tag="gravel">Gravel & MTB</button>
+      <button class="tag-filter-btn verein"     data-filter-tag="verein">Verein</button>
+    </div>
+    {% endif %}
     <div class="row g-4">
       {% if page.layout == "aktuelles" %}
         {% assign news_posts = site.posts %}
@@ -16,7 +25,7 @@
         {% assign news_posts = site.posts | slice: 0, 4 %}
       {% endif %}
       {% for post in news_posts %}
-        <div class="col-12 col-sm-6 col-lg-3" data-post-idx="{{ forloop.index0 }}">
+        <div class="col-12 col-sm-6 col-lg-3" data-post-idx="{{ forloop.index0 }}" data-tag="{{ post.tag }}">
           <article class="news-card h-100 d-flex flex-column">
             <div class="news-img-wrap">
               <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="news-img" alt="{{ post.alt }}">
@@ -28,7 +37,10 @@
               <hr class="news-divider">
               <h3 class="news-title"><a href="{{ post.url }}" class="news-title-link">{{ post.title }}</a></h3>
               <div class="news-text flex-grow-1">{{ post.excerpt }}</div>
-              <a href="{{ post.url }}" class="news-arrow mt-auto ms-auto">Weiterlesen →</a>
+              <div class="d-flex align-items-center mt-auto">
+                {% if post.tag %}<span class="tag-badge tag-{{ post.tag }}">{{ site.data.tags[post.tag].label }}</span>{% endif %}
+                <a href="{{ post.url }}" class="news-arrow ms-auto">Weiterlesen →</a>
+              </div>
             </div>
           </article>
         </div>

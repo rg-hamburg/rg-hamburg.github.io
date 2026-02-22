@@ -1,6 +1,7 @@
 ---
 title: "Außerordentliche Mitgliederversammlung der RG-Hamburg"
 date: 2022-11-09
+tag: verein
 ---
 
 Die RG Hamburg lädt alle Mitglieder zur **außerordentlichen Mitgliederversammlung** ein:

@@ -14,6 +14,7 @@ gallery:
     alt: "Sebastian Niehues (RSV Münster v. 1895), Nicolas Zippan (Team Standert Brandenburg), Luca Bockelmann (Siena Garden Racing)"
   - file: news/Siegerehrung_Masters3_Maenner.jpeg
     alt: "Behnke Timo (RG Hamburg), Renzo Wernicke (Team Marx Städter-Bikescheune), Christian Hamburg (VonHacht-Masters)"
+tag: rennsport
 ---
 
 Am 7. September 2025 fand der **40. Große Preis von Volksdorf** statt — ein Jubiläumsrennen durch den Volksdorfer Ortskern, das rund 250 nationale und internationale Radfahrerinnen und Radfahrer auf einem Ein-Kilometer-Kurs zusammenbrachte. Etwa 1.000 Zuschauer verfolgten das Geschehen bei bestem Wetter.

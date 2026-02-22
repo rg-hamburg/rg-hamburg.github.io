@@ -12,6 +12,7 @@ gallery:
     alt: "Die RG-Hamburg"
   - file: news/Picture5-1.jpg
     alt: "Marc Teichmann auf Platz 2"
+tag: bmx
 ---
 
 Am 2. und 3. Juli 2022 reisten 12 Fahrerinnen und Fahrer der RG Hamburg zur **Deutschen Meisterschaft** und zum **Deutschland Cup** nach Esselbach in Bayern — bei bestem Sommerwetter.

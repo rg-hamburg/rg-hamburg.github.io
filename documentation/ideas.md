@@ -2,9 +2,10 @@
 
 ## Inhalt
 
-- [x] BMX-Inhalte überarbeiten
+- [ ] Legal-Seiten überarbeiten und mit Hero-Bild versehen. Typographie glattziehen
 - [ ] Gravel-Seite erst einmal deaktivieren?
 - [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
+- [x] BMX-Inhalte überarbeiten
 - [x] Rennsport-Seite aufbauen
 - [x] Newsletter-Inhalte in Aktuelles integrieren
 - [x] Aktuelles: Detailseite

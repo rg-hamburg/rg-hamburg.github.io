@@ -20,7 +20,10 @@ layout: default
     <h2 class="post-title mb-2">{{ page.title }}</h2>
     {% assign de_months = "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember" | split: "," %}
     {% assign m = page.date | date: "%-m" | minus: 1 %}
-    <p class="post-date">{{ page.date | date: "%-d" }}. {{ de_months[m] }} {{ page.date | date: "%Y" }}</p>
+    <div class="d-flex align-items-center">
+      <p class="post-date mb-0">{{ page.date | date: "%-d" }}. {{ de_months[m] }} {{ page.date | date: "%Y" }}</p>
+      {% if page.tag %}<span class="tag-badge tag-{{ page.tag }} ms-auto">{{ site.data.tags[page.tag].label }}</span>{% endif %}
+    </div>
   </div>
 </section>
 

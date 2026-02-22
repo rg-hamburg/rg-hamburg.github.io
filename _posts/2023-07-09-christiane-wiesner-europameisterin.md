@@ -8,6 +8,7 @@ gallery:
     alt: "Zufriedenes Gesicht bei der Zieleinfahrt"
   - file: news/Chrissi_Wiesner3_.jpg
     alt: "Zufriedene Gesichter. Die Siegerinnen der Europameisterschaft."
+tag: bmx
 ---
 
 Herzlichen Glückwunsch, Chrissy! 🎉

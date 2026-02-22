@@ -3,6 +3,7 @@ title: "Mark Teichmann im Eurocup Finale"
 date: 2022-05-17
 image: news/IMG_6733_.jpg
 alt: "Marc Teichmann beim UEC BMX European Cup in Stuttgart"
+tag: bmx
 ---
 
 Die RG Hamburg war beim **UEC BMX European Cup** in Stuttgart dabei — Läufe 7 und 8 am 14. und 15. Mai 2022 beim BMX UNION Stuttgart.

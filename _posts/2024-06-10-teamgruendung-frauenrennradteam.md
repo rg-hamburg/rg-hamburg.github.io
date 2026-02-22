@@ -3,6 +3,7 @@ title: "Teamgründung Frauenrennradteam"
 date: 2024-06-10
 image: news/IMG_7844_.jpg
 alt: "Das Gruppetto Hamburg Women Team"
+tag: rennsport
 ---
 
 Hamburg bekommt sein erstes Frauen-Rennradteam für lizenzierte Straßenrennen: das **Gruppetto Hamburg Women c/o RG Hamburg Team**.

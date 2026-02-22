@@ -3,6 +3,7 @@ title: "Zeitplan BMX Nordcup 28. und 29. Mai 2022"
 date: 2022-05-12
 image: news/Nordcup-Logo-2.png
 alt: "BMX Nordcup Logo"
+tag: bmx
 ---
 
 Der Zeitplan für den BMX Nordcup am **28. und 29. Mai 2022** in Hamburg steht fest:

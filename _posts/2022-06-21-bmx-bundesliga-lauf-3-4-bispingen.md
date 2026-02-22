@@ -14,6 +14,7 @@ gallery:
     alt: "Chrissy Wiesner auf Platz 1 und Judith Tauber auf Platz 2"
   - file: news/Podest-6.jpg
     alt: "Mark Teichmann auf Platz 3"
+tag: bmx
 ---
 
 Am **18. und 19. Juni 2022** fanden in Bispingen die Bundesliga-Läufe 3 und 4 statt — mit starken Ergebnissen für die RG Hamburg.

@@ -3,6 +3,7 @@ title: "38. Großer Preis von Volksdorf — Ankündigung"
 date: 2023-07-13
 image: news/RGH-Volksdorf_Rennen2023_SoMe.jpg
 alt: "38. Großer Preis von Volksdorf 2023"
+tag: rennsport
 ---
 
 Das Radrennen in Volksdorf verspricht packende Action, sportliche Höchstleistungen und Spaß für die ganze Familie! Am **3. September 2023** findet der **38. Große Preis von Volksdorf** im Rahmen des Volksdorfer Stadtteilfests statt.

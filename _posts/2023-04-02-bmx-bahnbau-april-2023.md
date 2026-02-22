@@ -16,6 +16,7 @@ gallery:
     alt: "BMX Bahnbau April 2023"
   - file: news/IMG_9004-rotated.jpg
     alt: "BMX Bahnbau April 2023"
+tag: bmx
 ---
 
 Dieses Wochenende wurde der Winter aus der BMX-Bahn gekehrt — gewalzt und druckgespült. Dank zahlreicher Helferinnen und Helfer ist die endlose To-do-Liste ein gutes Stück kürzer geworden.

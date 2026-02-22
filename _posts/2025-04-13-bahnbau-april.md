@@ -18,6 +18,7 @@ gallery:
     alt: "Bahnbau am 12. April 2025"
   - file: news/IMG_2710.jpg
     alt: "Bahnbau am 12. April 2025"
+tag: bmx
 ---
 
 Sonne und blauer Himmel — also alles perfekt für einen tollen Bahnbau-Tag!

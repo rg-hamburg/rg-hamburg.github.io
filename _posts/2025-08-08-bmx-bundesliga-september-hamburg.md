@@ -3,6 +3,7 @@ title: "BMX Bundesliga am 20. / 21. September in Hamburg"
 date: 2025-08-08
 image: news/image001.png
 alt: "BMX Bundesliga Lauf 5 und 6 in Hamburg"
+tag: bmx
 ---
 
 Wir freuen uns, euch herzlich zum BMX-Bundesligarennen **Lauf 5 und 6** in Hamburg einzuladen!

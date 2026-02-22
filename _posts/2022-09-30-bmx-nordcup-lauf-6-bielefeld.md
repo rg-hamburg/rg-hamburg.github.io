@@ -12,6 +12,7 @@ gallery:
     alt: "Ferenz Isenbürger, Platz 2, Jonas Bott, Platz 3 – Boys 15-16"
   - file: news/image4_.jpeg
     alt: "Joshua Stürmer, Elite National Men, Platz 2"
+tag: bmx
 ---
 
 19 BMX Racer der RG Hamburg waren beim **6. und letzten Nordcup-Lauf** der Saison 2022 am 25. September in Bielefeld am Start — bei besten Bedingungen.

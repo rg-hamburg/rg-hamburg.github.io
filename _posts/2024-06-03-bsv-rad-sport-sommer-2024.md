@@ -3,6 +3,7 @@ title: "BSV Rad-Sport-Sommer 2024"
 date: 2024-06-03
 image: news/Logo_Slogan_BSV_Rad-Sport-Sommer.jpg
 alt: "BSV Rad-Sport-Sommer 2024 Logo"
+tag: verein
 ---
 
 Die RG Hamburg nimmt am **BSV Rad-Sport-Sommer** vom 20. bis 27. Juli 2024 in Hamburg teil — eine Veranstaltungsreihe des Betriebssport-Verbands Hamburg e.V. mit Radsport-Schwerpunkt.
