@@ -5,7 +5,7 @@
 - [x] Posts von der alten Seite überführen
 - [ ] Rennsport-Seite aufbauen
 - [ ] Gravel-Seite erst einmal deaktivieren
-- [ ] Newsletter-Inhalte in Aktuelles integrieren
+- [x] Newsletter-Inhalte in Aktuelles integrieren
 - [x] Aktuelles: Detailseite
 - [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
 
@@ -16,6 +16,7 @@
 
 ## Technisch
 
+- [ ] Favicon von https://rg-hamburg.de/ übernehmen
 - [ ] Tags für Aktuelles? Filtermöglichkeit
 - [ ] Link-Farbe
 - [ ] SEO Optimierung
