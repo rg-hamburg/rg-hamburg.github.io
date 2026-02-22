@@ -2,7 +2,7 @@
 
 ## Inhalt
 
-- [ ] BMX-Inhalte überarbeiten
+- [x] BMX-Inhalte überarbeiten
 - [ ] Gravel-Seite erst einmal deaktivieren?
 - [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
 - [x] Rennsport-Seite aufbauen

@@ -57,17 +57,17 @@ disciplines:
   - name: Rennsport
     url: /rennsport/
     image: discipline-rennsport.png
-    description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+    description: "Vom Lizenzrennen bis zur RTF-Ausfahrt: Rennsport bei der RG Hamburg vereint Wettkampf und Gemeinschaft. Heimrennen: der Große Preis von Volksdorf, seit 1983."
     btn_label: Erfahre mehr
   - name: BMX
     url: /bmx/
     image: discipline-bmx.png
-    description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+    description: "Acht Fahrer, ein Startblock, 300 Meter Vollgas — mit Sprüngen, Kurven und echtem Herzrasen. BMX Racing ist familientauglich, olympisch und bei uns in Hamburg zuhause."
     btn_label: Erfahre mehr
   - name: "Gravel & MTB"
     url: /gravel/
     image: discipline-gravel.png
-    description: "Auf dich wartet ein junges Team aus den besten Radsportlern Hamburgs unter der Anleitung von erfahrenen Trainern."
+    description: "Schotter, Feldwege und Hamburger Umland: Unsere Gravel Rides erkunden sonntags die Region — getrennte Gruppen für Einsteiger und Erfahrene, immer gemeinsam unterwegs."
     btn_label: Erfahre mehr
 
 # ---------------------------------------------------------------------
