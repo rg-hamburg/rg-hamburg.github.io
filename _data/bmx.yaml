@@ -5,15 +5,21 @@ section_label: Disziplinen
 
 faq:
   - question: "Wo wird trainiert?"
-    answer: "Wir – die RG Hamburg – betreiben eine vereinseigene Anlage, Neusurenland 66, 22159 Hamburg. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+    answer: "Wir betreiben eine vereinseigene Außenanlage am Neusurenland 66, 22159 Hamburg. Die Saison läuft von Anfang April bis Mitte Oktober — trainiert wird montags bis donnerstags in festen Gruppen, freitags gibt es freies Fahren für Vereinsmitglieder und BDR-Sportler. Bei gutem Wetter öffnen wir die Bahn auch außerhalb der regulären Zeiten."
   - question: "Wer kann mitmachen?"
-    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
-  - question: "Welche Arten von BMX?"
-    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
-  - question: "Sport und Spaß?"
-    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+    answer: "BMX Racing ist offen für alle — von Kindern ab 5 Jahren bis zu Senioren 45+. Keine Rennerfahrung nötig: Wer sicher und selbstständig Fahrrad fahren kann, kann sofort loslegen. Für die Kleinsten gibt es die Schnupperkids-Gruppe (mittwochs), für Ältere und Erfahrene eigene Gruppen bis hin zur Leistungsgruppe."
+  - question: "Was muss ich zum Training mitbringen?"
+    answer: "Lange Kleidung (Arme und Beine bedeckt), geschlossene Schuhe und ausreichend Wasser. Ein eigenes Fahrrad ist für das Schnupperkids-Probetraining kein Muss — BMX-Bike, Vollvisierhelm und Handschuhe werden gestellt. Wer ein eigenes Rad mitbringt: Es muss verkehrssicher sein; für den Wettkampf ist ein BDR-zugelassenes Rennbike erforderlich."
+  - question: "Ist BMX Racing gefährlich?"
+    answer: "Mit der richtigen Schutzausrüstung ist BMX Racing nicht gefährlicher als andere Kontaktsportarten. Pflicht sind Vollvisierhelm (normaler Fahrradhelm reicht nicht), lange Ärmel, lange Hosen und Fünf-Finger-Handschuhe. Auf unserer Anlage trainieren alle Gruppen unter Aufsicht erfahrener Trainerinnen und Trainer."
   - question: "Wie funktioniert das Schnupperkids Probetraining?"
-    answer: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes."
+    answer: 'Die Schnupperkids-Gruppe ist der Einstieg für Kinder ohne Rennerfahrung. Bike, Helm und Handschuhe werden gestellt — mitbringen: lange Kleidung, festes Schuhwerk. Voraussetzung: Das Kind sollte sicher und selbstständig Fahrrad fahren können. Den aktuellen Termin findest du in der Trainingsübersicht weiter unten. Anmeldung per Mail an <a href="mailto:bmx@rg-hamburg.de" class="text-rg-blue">bmx@rg-hamburg.de</a>.'
+  - question: "Was ist der Unterschied zwischen BMX Racing und BMX Freestyle?"
+    answer: "BMX Racing ist Geschwindigkeit: Acht Fahrer starten gleichzeitig aus dem Startblock und fahren einen 300–400 Meter langen Kurs mit Sprüngen, Steilkurven und Rhythmussektionen — gewonnen hat, wer zuerst die Ziellinie überquert. BMX Freestyle dreht sich um Tricks im Skatepark oder auf Rampen. Bei der RG Hamburg betreiben wir BMX Racing."
+  - question: "Wie läuft ein Wettkampf ab?"
+    answer: "In der Qualifikation (Motos) fahren bis zu 8 Fahrer gleichzeitig mehrere Läufe — die Ergebnisse bestimmen, wer ins Halbfinale und Finale kommt. Gewertet wird nach Zieldurchfahrt, nicht nach Zeit. Die wichtigsten Serien für unsere Fahrer sind der NordCup und die BMX-Bundesliga, die die RG Hamburg regelmäßig auch selbst ausrichtet."
+  - question: "Braucht mein Kind eine Lizenz?"
+    answer: 'Für Training und Probetraining ist keine Lizenz nötig. Wer an offiziellen Wettkämpfen teilnehmen möchte, braucht eine Jahreslizenz des Bund Deutscher Radfahrer (BDR). Wir helfen beim Einstieg — einfach per Mail melden: <a href="mailto:bmx@rg-hamburg.de" class="text-rg-blue">bmx@rg-hamburg.de</a>.'
   - question: "Kann ich die BMX-Bahn mieten?"
     answer: 'Bahnvermietungen nur an BMX Vereine des Bund Deutscher Radfahrer e.V. oder/und nach Absprache und Anmeldung bei unseren BMX Fachwärtinnen Vivien Schlapper oder Sandra Thiel: <a href="mailto:bmx@rg-hamburg.de" class="text-rg-blue">bmx@rg-hamburg.de</a>. Gastfahrer sind zu allen Öffnungszeiten willkommen.'
 
