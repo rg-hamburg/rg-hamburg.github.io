@@ -2,12 +2,12 @@
 
 ## Inhalt
 
-- [x] Posts von der alten Seite überführen
 - [ ] Rennsport-Seite aufbauen
 - [ ] Gravel-Seite erst einmal deaktivieren
+- [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
 - [x] Newsletter-Inhalte in Aktuelles integrieren
 - [x] Aktuelles: Detailseite
-- [ ] Aktuelles: Artikel überarbeiten und die vielen Umbrüche entfernen
+- [x] Posts von der alten Seite überführen
 
 ## Prozesse
 

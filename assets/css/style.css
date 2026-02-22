@@ -136,14 +136,16 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  /* vertical spacing for nav links in collapsed mobile menu */
-  .nav-links .nav-link { padding: 8px 0; }
+  /* nav links: right-aligned vertical list in collapsed mobile menu */
+  .nav-links                { flex-direction: column; align-items: flex-end; width: 100%; }
+  .nav-links .nav-link      { padding: 8px 0; text-align: right; }
   .nav-links .dropdown-menu {
     border-top: none;
     border-radius: 0;
-    padding: 0 0 8px 12px;
+    padding: 0 0 8px 0;
+    text-align: right;
   }
-  .nav-links .dropdown-item { font-size: 16px; padding: 6px 0; }
+  .nav-links .dropdown-item { font-size: 16px; padding: 6px 0; text-align: right; }
 }
 
 /* Active nav indicator — yellow bar at bottom of navbar */
@@ -729,7 +731,7 @@ body {
 /* Hero */
 @media (max-width: 767.98px) {
   .hero                { height: 480px; }
-  .hero-text-box       { top: 120px; width: 100%; padding: 20px 24px 28px; }
+  .hero-text-box       { top: 120px; left: 0; right: 0; width: auto; padding: 20px 24px 28px; }
   .hero-heading        { font-size: 30px; margin-bottom: 14px; }
   .hero-body           { font-size: 16px; margin-bottom: 20px; }
   .hero-pagi-item span { font-size: 13px; }
