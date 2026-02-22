@@ -5,6 +5,8 @@
 - [x] Posts von der alten Seite überführen
 - [ ] Rennsport-Seite aufbauen
 - [ ] Gravel-Seite erst einmal deaktivieren
+- [ ] Newsletter-Inhalte in Aktuelles integrieren
+- [ ] Aktuelles: Detailseite
 
 ## Prozesse
 

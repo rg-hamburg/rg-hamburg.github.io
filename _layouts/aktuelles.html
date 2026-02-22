@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     render();
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    var url = p === 1 ? location.pathname : location.pathname + '?page=' + p;
+    history.pushState({ page: p }, '', url);
   }
 
   function mkBtn(label, targetPage) {
@@ -66,7 +68,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (page < totalPages) pager.appendChild(mkBtn('Ältere →', page + 1));
   }
 
-  show(1);
+  var initPage = parseInt(new URLSearchParams(location.search).get('page')) || 1;
+  initPage = Math.min(Math.max(initPage, 1), totalPages);
+  history.replaceState({ page: initPage }, '', location.href);
+  show(initPage);
+
+  window.addEventListener('popstate', function (e) {
+    if (e.state && e.state.page) show(e.state.page);
+  });
 });
 </script>
 
