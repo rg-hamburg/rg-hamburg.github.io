@@ -23,7 +23,7 @@
       - Lighthouse MCP server nutzen & Seite generell optimieren
 - [ ] Ungenutzte Assets entfernen
 - [ ] Link-Farbe ändern? Blau ist hässlich ..
-- [ ] SEO Optimierung
+- [ ] SEO Optimierung: Structured data & meta descriptions
 - [ ] gitHub action zum checken von linkstruktur
 - [ ] Insta-Account RG Hamburg
 - [x] Tags für Aktuelles? Filtermöglichkeit
