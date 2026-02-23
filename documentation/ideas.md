@@ -21,6 +21,7 @@
 
 - [ ] Bilder fürs web optimieren
       - Lighthouse MCP server nutzen & Seite generell optimieren
+- [ ] Usertracking mit Google (oder was anderem)
 - [ ] Ungenutzte Assets entfernen
 - [ ] Link-Farbe ändern? Blau ist hässlich ..
 - [ ] SEO Optimierung: Structured data & meta descriptions
