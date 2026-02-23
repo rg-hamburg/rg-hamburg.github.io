@@ -20,6 +20,7 @@
 ## Technisch
 
 - [ ] Bilder fürs web optimieren
+      - Lighthouse MCP server nutzen & Seite generell optimieren
 - [ ] Ungenutzte Assets entfernen
 - [ ] Link-Farbe ändern? Blau ist hässlich ..
 - [ ] SEO Optimierung
