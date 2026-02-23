@@ -19,10 +19,12 @@
 
 ## Technisch
 
-- [ ] Favicon von https://rg-hamburg.de/ übernehmen
-- [ ] Tags für Aktuelles? Filtermöglichkeit
-- [ ] Link-Farbe
+- [ ] Bilder fürs web optimieren
+- [ ] Ungenutzte Assets entfernen
+- [ ] Link-Farbe ändern? Blau ist hässlich ..
 - [ ] SEO Optimierung
 - [ ] gitHub action zum checken von linkstruktur
 - [ ] Insta-Account RG Hamburg
+- [x] Tags für Aktuelles? Filtermöglichkeit
+- [x] Favicon von https://rg-hamburg.de/ übernehmen
 - [x] Ordnerstruktur (/disziplinen/ weg)
