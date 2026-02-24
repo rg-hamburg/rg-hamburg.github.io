@@ -19,6 +19,7 @@ exclude:
   - docker-compose.yaml
   - documentation/
   - README.md
+  - AGENTS.md
   - .github
   - .claude
   - .vscode
