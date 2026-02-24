@@ -15,8 +15,7 @@
       <div class="carousel-inner post-carousel-inner">
         {% for img in page.gallery %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
-          {% if img.file contains '://' %}{% assign _slide_src = img.file %}{% else %}{% assign _slide_src = site.baseurl | append: '/assets/images/' | append: img.file %}{% endif %}
-          <img src="{{ _slide_src }}"
+          <img src="{{ site.baseurl }}/assets/images/{{ img.file }}"
                class="d-block w-100 post-carousel-img"
                alt="{{ img.alt }}" style="cursor: zoom-in;">
         </div>
