@@ -28,33 +28,59 @@ document.addEventListener('DOMContentLoaded', function () {
   var filterBtns    = Array.from(document.querySelectorAll('[data-filter-tag]'));
   var activeTag     = null;
   var page          = 1;
+  var totalPages    = 1;
 
-  var total      = allCards.length;
-  var totalPages = total <= PAGE1 ? 1 : 1 + Math.ceil((total - PAGE1) / PAGEN);
+  function getFilteredCards() {
+    if (!activeTag) return allCards;
+    return allCards.filter(function (c) { return c.dataset.tag === activeTag; });
+  }
 
-  function show(p) {
-    if (activeTag !== null) return;
+  function buildUrl(p, tag) {
+    var params = new URLSearchParams();
+    if (tag) params.set('tag', tag);
+    if (p > 1) params.set('page', String(p));
+    var qs = params.toString();
+    return location.pathname + (qs ? '?' + qs : '');
+  }
+
+  function show(p, skipPush) {
+    var cards = getFilteredCards();
+    var count = cards.length;
+    totalPages = count <= PAGE1 ? 1 : 1 + Math.ceil((count - PAGE1) / PAGEN);
+
+    p = Math.min(Math.max(p, 1), totalPages);
     page = p;
-    if (p === 1) {
-      if (eventsSection) eventsSection.style.display = '';
-      allCards.forEach(function (c, i) { c.style.display = i < PAGE1 ? '' : 'none'; });
-    } else {
-      if (eventsSection) eventsSection.style.display = 'none';
-      var start = PAGE1 + (p - 2) * PAGEN;
-      allCards.forEach(function (c, i) {
-        c.style.display = (i >= start && i < start + PAGEN) ? '' : 'none';
-      });
+
+    if (eventsSection) {
+      eventsSection.style.display = (!activeTag && p === 1) ? '' : 'none';
     }
+
+    var start, end;
+    if (p === 1) {
+      start = 0;
+      end = PAGE1;
+    } else {
+      start = PAGE1 + (p - 2) * PAGEN;
+      end = start + PAGEN;
+    }
+
+    allCards.forEach(function (c) { c.style.display = 'none'; });
+    cards.forEach(function (c, i) {
+      c.style.display = (i >= start && i < end) ? '' : 'none';
+    });
+
     renderPager();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    var url = p === 1 ? location.pathname : location.pathname + '?page=' + p;
-    history.pushState({ page: p }, '', url);
+
+    if (!skipPush) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      history.pushState({ page: p, tag: activeTag }, '', buildUrl(p, activeTag));
+    }
   }
 
   function mkBtn(label, targetPage) {
     var el = document.createElement('button');
     el.textContent = label;
-    el.className = 'btn btn-rg-outline';
+    el.className = 'pager-link';
     el.onclick = function () { show(targetPage); };
     return el;
   }
@@ -76,15 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
     filterBtns.forEach(function (btn) {
       btn.classList.toggle('active', btn.dataset.filterTag === (tag || ''));
     });
-    if (activeTag) {
-      if (eventsSection) eventsSection.style.display = 'none';
-      pager.style.display = 'none';
-      allCards.forEach(function (c) {
-        c.style.display = (c.dataset.tag === activeTag) ? '' : 'none';
-      });
-    } else {
-      show(1);
-    }
+    show(1);
   }
 
   filterBtns.forEach(function (btn) {
@@ -93,18 +111,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  var initPage = parseInt(new URLSearchParams(location.search).get('page')) || 1;
-  initPage = Math.min(Math.max(initPage, 1), totalPages);
-  history.replaceState({ page: initPage }, '', location.href);
-  show(initPage);
+  /* --- Init from URL --- */
+  var params   = new URLSearchParams(location.search);
+  var initTag  = params.get('tag') || null;
+  var initPage = parseInt(params.get('page')) || 1;
+
+  if (initTag) {
+    activeTag = initTag;
+    filterBtns.forEach(function (btn) {
+      btn.classList.toggle('active', btn.dataset.filterTag === initTag);
+    });
+  }
+
+  history.replaceState({ page: initPage, tag: activeTag }, '', location.href);
+  show(initPage, true);
 
   window.addEventListener('popstate', function (e) {
-    if (e.state && e.state.page) {
-      activeTag = null;
+    if (e.state) {
+      activeTag = e.state.tag || null;
       filterBtns.forEach(function (btn) {
-        btn.classList.toggle('active', btn.dataset.filterTag === '');
+        btn.classList.toggle('active', btn.dataset.filterTag === (activeTag || ''));
       });
-      show(e.state.page);
+      show(e.state.page || 1, true);
     }
   });
 });
