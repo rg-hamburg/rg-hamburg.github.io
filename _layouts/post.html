@@ -2,9 +2,11 @@
 layout: default
 ---
 
-{% if page.image %}
+{% assign _hero = page.image %}
+{% unless _hero %}{% if page.tag %}{% assign _hero = site.data.site.tags[page.tag].default_image %}{% endif %}{% endunless %}
+{% if _hero %}
 <section class="page-hero">
-  <img src="{{ site.baseurl }}/assets/images/{{ page.image }}"
+  <img src="{{ site.baseurl }}/assets/images/{{ _hero }}"
        class="page-hero-bg" alt="{{ page.alt | default: page.title }}">
   <div class="page-hero-overlay"></div>
   <div class="container h-100 position-relative">

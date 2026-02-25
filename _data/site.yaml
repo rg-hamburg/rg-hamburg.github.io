@@ -114,12 +114,16 @@ kontakt:
 tags:
   bmx:
     label: BMX
+    default_image: news/Rennen_1.jpeg
   rennsport:
     label: Rennsport
+    default_image: news/Rennen1.jpeg
   gravel:
     label: Gravel & MTB
+    default_image: news/Rennen1.jpeg
   verein:
     label: Verein
+    default_image: news/vereinsfeier-2026-jubilare-ehrung.jpg
 
 # ---------------------------------------------------------------------
 instagram:

@@ -27,9 +27,13 @@
       {% for post in news_posts %}
         <div class="col-12 col-sm-6 col-lg-3" data-post-idx="{{ forloop.index0 }}" data-tag="{{ post.tag }}">
           <article class="news-card h-100 d-flex flex-column">
+            {% assign _img = post.image %}
+            {% unless _img %}{% if post.tag %}{% assign _img = site.data.site.tags[post.tag].default_image %}{% endif %}{% endunless %}
+            {% if _img %}
             <div class="news-img-wrap">
-              <img src="{{ site.baseurl }}/assets/images/{{ post.image }}" class="news-img" alt="{{ post.alt }}">
+              <img src="{{ site.baseurl }}/assets/images/{{ _img }}" class="news-img" alt="{{ post.alt | default: post.title }}">
             </div>
+            {% endif %}
             <div class="news-body flex-grow-1 d-flex flex-column p-3">
               {% assign months_de = "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember" | split: "," %}
               {% assign month_idx = post.date | date: "%-m" | minus: 1 %}
