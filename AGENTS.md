@@ -59,13 +59,12 @@ Posts are automatically available at `/aktuelles/YYYY/slug/`. The `_includes/new
 
 | File | Controls |
 |------|----------|
-| `site.yaml` | Nav links, footer links, social URLs, **hero carousel**, **discipline cards**, **partner logos** |
+| `site.yaml` | Nav links, footer links, social URLs, **hero carousel**, **discipline cards**, **partner logos**, **kontakt teaser**, **tags**, **Instagram feed** |
 | `events.yaml` | Veranstaltungen cards |
 | `probetraining.yaml` | Probetraining section |
-| `kontakt.yaml` | Kontakt-Teaser section |
 | `bmx.yaml` | BMX discipline page content |
 
-Hero, disciplines, and partners are embedded in `site.yaml` under `hero:`, `disciplines:`, and `partners:` keys so editors can find all core content in one file.
+Hero, disciplines, partners, kontakt, tags, and Instagram are embedded in `site.yaml` under `hero:`, `disciplines:`, `partners:`, `kontakt:`, `tags:`, and `instagram:` keys so editors can find all core content in one file.
 
 ### Pages
 

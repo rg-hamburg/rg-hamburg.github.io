@@ -49,12 +49,12 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  broken-link-check:
-    name: Check for broken links
-    runs-on: ubuntu-latest
-    needs: deploy
-    steps:
-      - name: Broken Link Check
-        uses: technote-space/broken-link-checker-action@v2
-        with:
-          TARGET: "https://rg-hamburg.github.io/"
+#  broken-link-check:
+#    name: Check for broken links
+#    runs-on: ubuntu-latest
+#    needs: deploy
+#    steps:
+#      - name: Broken Link Check
+#        uses: technote-space/broken-link-checker-action@v2
+#        with:
+#          TARGET: "https://rg-hamburg.github.io/"

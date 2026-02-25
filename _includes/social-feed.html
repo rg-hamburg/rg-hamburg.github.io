@@ -10,7 +10,7 @@
 
     <p class="small text-muted mb-1">@rg_hamburg</p>
     <div id="instafeed-rg" class="row g-2 mb-3">
-      {% for post in site.data.instagram.rg_hamburg.posts %}
+      {% for post in site.data.site.instagram.rg_hamburg.posts %}
         <div class="col-4">
           <div class="social-item">
             {% if post.url %}
@@ -27,7 +27,7 @@
 
     <p class="small text-muted mb-1">@bmx_rghamburg</p>
     <div id="instafeed-bmx" class="row g-2">
-      {% for post in site.data.instagram.bmx_rghamburg.posts %}
+      {% for post in site.data.site.instagram.bmx_rghamburg.posts %}
         <div class="col-4">
           <div class="social-item">
             {% if post.url %}

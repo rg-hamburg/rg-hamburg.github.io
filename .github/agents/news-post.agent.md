@@ -45,7 +45,7 @@ tag: bmx
 | `gravel` | Gravel & MTB | Gravel rides, mountain biking, off-road events |
 | `verein` | Verein | Club news, board elections, membership meetings, Jahresfeier, general announcements |
 
-If the issue does not specify a tag, infer it from the content. Prefer the most specific discipline tag over `verein`.
+Tags are defined in `_data/site.yaml` under the `tags:` key. If the issue does not specify a tag, infer it from the content. Prefer the most specific discipline tag over `verein`.
 
 ## File naming
 

@@ -38,7 +38,7 @@
               <h3 class="news-title"><a href="{{ post.url }}" class="news-title-link">{{ post.title }}</a></h3>
               <div class="news-text flex-grow-1">{{ post.excerpt }}</div>
               <div class="d-flex align-items-center mt-auto">
-                {% if post.tag %}<span class="tag-badge tag-{{ post.tag }}">{{ site.data.tags[post.tag].label }}</span>{% endif %}
+                {% if post.tag %}<span class="tag-badge tag-{{ post.tag }}">{{ site.data.site.tags[post.tag].label }}</span>{% endif %}
                 <a href="{{ post.url }}" class="news-arrow ms-auto">Weiterlesen →</a>
               </div>
             </div>
