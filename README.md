@@ -30,11 +30,27 @@ hier beschrieben. Alle Aktionen sind auf dem klassischen Weg und KI-unterstützt
 
 #### 🗞️ News-Artikel
 
-Öffne die [GitHub Agenten](agents) und wähle den `create-news-post` Agenten
-aus. Im Textfeld gib Stichworte/Texte und/oder Links zum News-Post ein. Der
-Agent formuliert den Text für Dich.
+Öffne die [GitHub Agenten](agents) und wähle über das Frosch-Symbol den
+`create-news-post` Agenten aus. Im Textfeld gib Stichworte/Texte und/oder
+Links zum News-Post ein. Der Agent formuliert den Text für Dich.
+
+![alt](documentation/create-post-agent.png)
+
+Sobald Copilot den Text geschrieben und die nötigen Inhalte im Projekt
+angelegt hat, erstellt er einen Pull Request. Öffne den Pull Request und
+hänge dort Bilder an, die Du dem Artikel hinzufügen möchtest. Schreibe
+`@copilot` dass er die Bilder an den news post anhängen soll. Wenn Du
+noch weitere Wünsche hast, lass es ihn wissen.
+
+![alt](documentation/agent-attach-images.png)
+
+Copilot arbeitet dann ein wenig. Wenn Du mit dem Text zufrieden bist,
+kannst du den Pull Request akzeptieren. Deine Änderungen sind dann innerhalb
+weniger Minuten online.
 
 #### 🎭 Veranstaltung
+
+...
 
 ## 🚀 Lokal ausführen
 
