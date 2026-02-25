@@ -28,19 +28,23 @@ Du in der `_data/site.yaml` konfigurieren.
 Typische Aktionen oder Änderungen, die regelmäßig ausgeführt werden, sind
 hier beschrieben. Alle Aktionen sind auf dem klassischen Weg und KI-unterstützt möglich.
 
-#### News-Artikel
+#### 🗞️ News-Artikel
 
-#### Veranstaltung
+Öffne die [GitHub Agenten](agents) und wähle den `create-news-post` Agenten
+aus. Im Textfeld gib Stichworte/Texte und/oder Links zum News-Post ein. Der
+Agent formuliert den Text für Dich.
 
-## Lokal ausführen
+#### 🎭 Veranstaltung
+
+## 🚀 Lokal ausführen
 
 Um Deine Änderungen lokal zu testen, kannst Du die Webseite mit Docker
-bauen lassen:
+bauen lassen. Nach dem Start ist sie unter [localhost:4000](https://localhost:4000) erreichbar.
 
 ```bash
 docker compose up
 ```
 
-## Disclaimer
+## 📚 Disclaimer
 
 Diese Webseite ist zu 100% vibe gecoded. Danke [Claude Code](https://claude.ai).

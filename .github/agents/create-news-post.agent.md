@@ -1,5 +1,5 @@
 ---
-name: news-post
+name: create-news-post
 description: Creates a new German-language news article for the RG Hamburg Jekyll website from an issue description, including post file, image placement, and pull request.
 ---
 
@@ -69,6 +69,10 @@ Tags are defined in `_data/site.yaml` under the `tags:` key. If the issue does n
 
 ## Image handling
 
+During the article creation no images can be supplied to you. Instead, you will
+receive image attachments from the pull-request you create. Please notify the
+user to attach pull-request to the issue. Follow these rules to handle them:
+
 ### Hero image
 
 - Download or save image attachments from the issue to `assets/images/news/`.
@@ -124,31 +128,6 @@ All content MUST be in **German**. Match the tone of existing posts: informative
 - Always use **double quotes** around the `title` value.
 - Use **double quotes** around `alt` values.
 - If a value contains German curly quotes (`„"`) or other special quote characters, use **single quotes** to wrap it instead — otherwise the YAML parser will break.
-
-## Pull request
-
-After creating the post file and any image files, open a pull request:
-
-- **Branch name:** `news/YYYY-MM-DD-slug` (matching the post filename)
-- **PR title:** `Neuer Beitrag: <article title>`
-- **PR body:**
-
-```markdown
-## Neuer Beitrag
-
-<Brief summary of the article in German>
-
-Vorschau-Pfad: `/aktuelles/YYYY/slug/`
-
-### Checkliste
-
-- [ ] Titel und Datum korrekt
-- [ ] Tag passt zum Inhalt
-- [ ] Bilder vorhanden und korrekt referenziert
-- [ ] Text Korrektur gelesen
-
-Closes #<issue-number>
-```
 
 ## Checklist before finishing
 
